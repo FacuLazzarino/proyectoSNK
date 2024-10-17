@@ -1,5 +1,15 @@
 *{margin:0 ;padding:0 ;}
 nav{
+    
+    font-family:'Grenze Gotisch',sans-serif;
     color: black;
     background-color: burlywood;
+}
+div{
+    display: inline-block;
+    width: 30%;
+}
+body{
+    background-image:url("Imagenes/fondo.webp");
+    background-repeat: no-repeat;
 }
