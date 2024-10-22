@@ -1,10 +1,9 @@
-*{margin:0 ;padding:0 ;}
-nav{
-    
-    font-family:'Grenze Gotisch',sans-serif;
-    color: black;
-    background-color: burlywood;
+*{  margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
 }
+
+
 div{
     display: inline-block;
     width: 30%;
@@ -12,4 +11,77 @@ div{
 body{
     background-image:url("Imagenes/fondo.webp");
     background-repeat: no-repeat;
+}
+nav ul {
+    display:inline-block;
+}
+header nav{
+   
+    display: flex;
+    justify-content: space-between;
+
+    font-family:'Grenze Gotisch',sans-serif;
+    color: black;
+    background-color:burlywood;
+
+}
+article{
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    font-family:'Grenze Gotisch',sans-serif;
+    color: black;
+    text-align:center;
+    font-size: 20;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgb(255, 255, 255);
+
+}
+.izq{
+  
+    padding-left: 0.5%;
+    padding-right: 3%;
+    justify-content: left;
+}
+.der{
+    text-align: right;
+    padding-left: 3%;
+    padding-right: 0.5%;
+    justify-content: right;
+}
+section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.centro{
+    text-align: center;
+}
+footer{
+    display: flex;
+    background-color: black;
+    color: white;   
+}
+footer ul li{
+    display: inline-block;
+  
+}
+
+
+.grilla{
+    justify-content: center;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: white;
+    padding: 3%;
+   
+    
+    
+}
+.separado{
+    padding: 1%;
+    
 }
