@@ -10,7 +10,7 @@ body{
     background-attachment: fixed;
     font-family: 'agdasima',sans-serif;
     font-size: 20;
-    font-weight: bold;
+ 
   
 }
 div{
@@ -18,16 +18,20 @@ div{
     padding: 1%;
 }
 
+nav{
+    font-weight: bold;
+}
+
 nav div{
     display: inline-block;
     padding: 1%;
-    width: 32%;
+ 
 }
 
 nav ul{
   
     display: flex;
-    margin-top: 3%;
+ 
     margin-left: 3%;
 }
 nav ul li{
@@ -35,29 +39,32 @@ nav ul li{
     display:flex;
     list-style: none;
     justify-content: space-around;
-}
-nav ul li {
     font-size: 1.2rem;
     padding-right: 2rem;
     text-transform: uppercase;
 }
+
 nav  ul li a:hover{
-    
+ 
     text-decoration: underline;
     font-weight: 800;
 }
 nav ul li ul{
     display:none;
     position: absolute;
-    min-width: 200px;
+    min-width: 170px;
     list-style: none;
+    margin-top: 1.7rem;
+ 
 }
 nav li:hover ul {
     display:block;
+ 
 }
 nav ul li ul li:hover{
-    background-color:rgb(240, 177, 95);;
+    background-color:rgb(240, 177, 95);
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -89,6 +96,7 @@ h1{
     font-size: 28;
     margin-left: 8%;
     margin-right: 8%;
+
     background-color: rgb(255, 255, 255);
 
 }
@@ -96,22 +104,22 @@ h2{
     font-family:'Grenze Gotisch',sans-serif;
 }
 .izq{
-  
-    padding-left: 0.5%;
+    margin-bottom: 0.9%;
+    padding-left: 1%;
     padding-right: 3%;
     justify-content: left;
 }
 .der{
     text-align: right;
     padding-left: 3%;
-    padding-right: 0.5%;
+    padding-right: 1%;
     justify-content: right;
 }
 section{
     justify-content: center;
     padding-left: 2%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     
     
 }
@@ -120,38 +128,36 @@ section{
     text-align: center;
 }
 footer{
+    
     margin-top: 2%;
     display: flex;
     background-color:rgb(0, 34, 3);
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-}
-footer ul li a{
-    padding-top: 3%;
     color: white;
-    display: inline-block;
-    
-  
+
 }
 
-footer ul li {
-    font-size: 1.2rem;
+
+footer p {
+    font-size: 0.8rem;
     padding-right: 2rem;
-    padding-top: 8%;
-    text-transform: uppercase;
+    padding-top: 1%;
     display: inline-block;
 }
-footer  ul  li a:hover{
-    text-decoration: underline;
-    font-weight: 800;
-}
+
 footer div{
     width:100% ;
 }
-footer img{
+footer a{
     display: inline-block;
-    padding-top: 1%;
+    justify-items: right;
+    padding-right: 2%;
+    padding-top: 1.2%;
     padding-left: 2%;
+}
+footer a:hover{
+    transform: scale(1.2);
 }
 
 
@@ -196,11 +202,59 @@ footer img{
     padding-bottom: 1%;
 }
 .imagen{
-    display: inline-block;
-    width: 25%;
+    display: block;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .detalle{
     justify-content: right;
     display: inline-block;
     width: 72%; 
 }
+input{
+    width: 18rem;
+    padding: 1%;
+    margin: 1%;
+    display: block;
+}
+textarea{
+    padding: 1%;
+    margin: 1%;
+}
+.enviar{
+    margin-left: 6%;
+    width: 6rem;
+    background-color: burlywood;
+ 
+}
+
+.enviar:hover{
+    background-color:rgb(240, 177, 95);
+    font-weight: 600;
+}
+
+form p{
+    display: inline-block;
+    display: block;
+}
+form{
+    padding-top: 2%;
+    display: inline-block;
+    padding: 1%;
+    justify-items: left;
+}
+form div{
+    padding-left: 5%;
+    display: flex;
+    display: block;
+}
+.imacontacto{
+    padding-top: 5%;
+    width: 50%;
+    margin-left: 2%;
+}
+.pelis{
+    width: 30%;
+}
+
