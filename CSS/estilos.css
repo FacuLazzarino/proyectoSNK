@@ -10,8 +10,10 @@ body{
     background-attachment: fixed;
     font-family: 'agdasima',sans-serif;
     font-size: 20;
- 
-  
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+   
 }
 section div{
     display: inline-block;   
@@ -102,6 +104,8 @@ h1{
 }
 h2{
     font-family:'Grenze Gotisch',sans-serif;
+    background-color: white;
+  
 }
 .izq{
     margin-bottom: 0.9%;
@@ -124,38 +128,40 @@ section{
     
 }
 .centro{
-    padding-bottom: 5%;
+    padding-bottom: 2%;
+    padding-top: 1%;
     text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 footer{
-    
-    margin-top: 2%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1.5%;
     display: flex;
     background-color:rgb(0, 34, 3);
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     color: white;
-
+    margin-top: 2%;
 }
 
 
-footer p {
+footer  p {
     font-size: 0.8rem;
-    padding-right: 2rem;
     padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
     display: inline-block;
 }
 
-footer div{
-    width:100% ;
-}
+
 footer a{
     display: inline-block;
- 
-    padding-right: 2%;
-    padding-top: 1.2%;
-    padding-left: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
+
 
 
 
@@ -166,12 +172,21 @@ footer a{
     margin-right: 8%;
     background-color: white;
     padding: 3%;
+    padding-bottom: 0;
    
     
     
 }
-.separado{
+
+.carnet:hover{
+    background-color: rgb(240, 177, 95);
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.carnet{
     padding: 1%;
+
     
 }
 .bloque{
@@ -192,6 +207,13 @@ footer a{
     font-weight: lighter;
 }
 .secundario div{
+    
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+
+.perso_index div{
     
 	width: 33%;
 	padding: 2%;
@@ -265,11 +287,213 @@ form div{
 }
 
 .galeria a img{
-    max-width: 300px;
-    max-height: 300px;
+  
+    width: 280px;
+    height: 200px;
 }
 
 .galeria img:hover{
-   transform: scale(1.3);
+   transform: scale(1.2);
+   border-style: solid;
+   border-width: 5px;
+   border-color:rgb(240, 177, 95); ;
 }
 
+.datos{
+    display:none;
+}
+
+.icon{
+    display: none;
+}
+
+.datos img{
+    display: inline-block;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+
+
+@media  (max-width: 480px){
+    header{
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: burlywood;
+        top: 0;
+        z-index: 1;
+    }
+    header img{
+        width: 75%;
+        height: auto;
+    }
+
+    header nav {
+        flex-basis: 100%;
+    }
+    .icon {
+        align-items: right;
+        display: inline-block;
+        padding-right: 7.5%;
+        text-align: right;
+    }
+    nav ul li ul{
+        display:none;
+        position: absolute;
+        min-width: 140px;
+        list-style: none;
+        margin-top: 1.7rem;
+     
+    }
+  
+    nav ul {
+        display: none;
+    }
+    nav.responsive ul {
+        display: block;
+        list-style: none;
+   
+
+    }
+  
+    nav.responsive ul li {
+        display: block;
+        text-align:center;
+        justify-content: center;
+        margin-left: 70%;
+        padding: 0.5rem;
+      
+    }
+
+    nav.responsive ul li ul{
+        display: none;
+        list-style: none;
+      
+        position: relative;
+     
+        margin-top: 2%;
+        margin-left: 0;
+        padding-left: 0;
+
+    }
+    nav ul li ul{
+        display: none;
+        max-width: 120px;
+        list-style: none;
+        margin-top: 1.7rem;
+         
+
+
+    }
+     
+
+    nav.responsive ul li ul.responsive {
+        display: block;
+        list-style: none;
+        text-align: left;
+        
+
+    }
+  
+    nav.responsive ul li ul.responsive li  {
+        display: block;
+        margin-top: 0;
+        margin-left: 0;
+      
+    }
+
+
+ 
+
+    section{
+        max-width: 480px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bloque{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .bloque img{
+        width: 95%;
+    }
+    .descripcion {
+        display: block;
+        justify-content: left;
+        width: 95%;
+        padding-left: 5%;
+        padding-bottom: 100px;
+    }
+    .grilla{
+        text-align: center;
+    }
+
+    .secundario{
+        text-align: center ;
+        margin-top: 1%;
+        width: 100%;
+    }
+    .secundario div{
+        display: inline-block;
+        max-width: 50%;
+    }
+    .secundario div img{
+        width: 100%;
+    }
+    .perso_index{
+        display: block;
+        text-align: center ;
+        margin-top: 1%;
+        width: 80%;
+    }
+    
+    .perso_index div{
+        display: block;
+        width: 100%;
+    }
+ 
+ 
+
+ 
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .imacontacto{
+        width: 95%;
+    }
+
+   
+    footer{
+        display: block;
+        text-align: center;
+    }
+    footer  p{
+        display: block;
+    }
+    footer a{
+        display:inline-block;
+        align-items:center;
+        padding-left: 2%;
+        margin-left: 8%;
+    }
+
+    .galeria{
+      padding-left: 5%;
+      padding-bottom: 5%;
+     
+    }
+    
+    .galeria a img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+
+   
+
+    }

@@ -19,22 +19,22 @@
         
         <div>
             <a href="index.html">
-                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
+                <img src="Imagenes/logo.png" alt="logo shingeki">
             </a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <nav id="menubarra" class="barratop">
             <ul>
-                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                <a href="javascript:void(0);" class="icon" onclick="personajes()"><li>Personajes</a>
                     <ul id="sub1" class="per">
-                        <li><a href="personajes1.html">Temporada 1</a></li>
-                        <li><a href="personajes2.html">Temporada 2</a></li>
-                        <li><a href="personajes3.html">Temporada 3</a></li>
-                        <li><a href="personajes4.html">Temporada 4</a></li>
+                        <li id="sub1" class="per"><a href="personajes1.html">Temporada 1</a></li>
+                        <li id="sub1" class="per"><a href="personajes2.html">Temporada 2</a></li>
+                        <li id="sub1" class="per"><a href="personajes3.html">Temporada 3</a></li>
+                        <li id="sub1" class="per"><a href="personajes4.html">Temporada 4</a></li>
                     </ul>
                 </li>
                
-                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                <li>Episodios
                     <ul id="sub2" class="epi">
                         <li><a href="episodios1.html">Temporada 1</a></li>
                         <li><a href="episodios2.html">Temporada 2</a></li>
@@ -101,9 +101,7 @@
                 
             </div>
         </section>
-        
     </article> 
-
     <footer>
   
        
@@ -125,10 +123,15 @@
             <a href="https://youtu.be/1sFmFme8yAU?si=XN_XNXy4xRI5l2t4" target="_blank">
                 <img src="Imagenes/youtube.webp" alt="logo de youtube">
             </a>
-   
+        
+
+        
+       
+
+        
+          
+        
     </footer>
-
-
     <script type="text/javascript">
         function myFunction() {
           let x = document.getElementById("menubarra");
@@ -154,7 +157,6 @@
             z.className = "epi";
           }
         }
-   
     </script>
 
     <script src="js/lightbox-plus-jquery.min.js"></script>
