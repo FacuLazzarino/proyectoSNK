@@ -6,7 +6,7 @@ html{ scroll-behavior: smooth;}
 }
 
 body{
-    background-image: url("fondo.webp");
+    background-image: url("../Imagenes/fondo.webp");
     background-repeat:no-repeat ;
     background-attachment: fixed;
     font-family: 'agdasima',sans-serif;
