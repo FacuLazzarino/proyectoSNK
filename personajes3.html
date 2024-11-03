@@ -6,52 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <title>Proyecto SNK</title>
+    <link href="CSS/lightbox.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js">  </script>
+    <title>SNK:  Guía cautelosa</title>
 </head>
 <body>
-<header>
+    <header>
                         
         
-    <div>
-        <a href="index.html">
-            <img src="Imagenes/logo.png" alt="logo shingeki">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li>Personajes
-               <ul>
-                   <li><a href="personajes1.html">Temporada 1</a></li>
-                   <li><a href="personajes2.html">Temporada 2</a></li>
-                   <li><a href="personajes3.html">Temporada 3</a></li>
-                   <li><a href="personajes4.html">Temporada 4</a></li>
-               </ul>
-           </li>
-          
-           <li>Episodios
-               <ul>
-                   <li><a href="episodios1.html">Temporada 1</a></li>
-                   <li><a href="episodios2.html">Temporada 2</a></li>
-                   <li><a href="episodios3.html">Temporada 3</a></li>
-                   <li><a href="episodios4.html">Temporada 4</a></li>
-               </ul>
-           </li>
-           
-           <li><a href="Otros contenidos.html">Extras</a></li>
-           <li><a href="contacto.html">Contacto</a></li>
-           <li><a href="#">Galeria</a></li>
-           
-           
-       </ul>
-   
-    
-   
-    </nav>
+        <div>
+            <a href="index.html">
+                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
+            </a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menubarra" class="barratop">
+            <ul>
+                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                    <ul id="sub1" class="per">
+                        <li><a href="personajes1.html">Temporada 1</a></li>
+                        <li><a href="personajes2.html">Temporada 2</a></li>
+                        <li><a href="personajes3.html">Temporada 3</a></li>
+                        <li><a href="personajes4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+               
+                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                    <ul id="sub2" class="epi">
+                        <li><a href="episodios1.html">Temporada 1</a></li>
+                        <li><a href="episodios2.html">Temporada 2</a></li>
+                        <li><a href="episodios3.html">Temporada 3</a></li>
+                        <li><a href="episodios4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Otros contenidos.html">Extras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Galería.html">Galería</a></li>
+                
+                
+            </ul>
+        
+       
+        </nav>
 
-</header>
+    </header> 
     <h1>PERSONAJES DE LA TEMPORADA 3</h1>
     <h2 class="centro">Haz click en un personaje para ver su descripción</h2>
     
@@ -189,7 +193,9 @@
             <h3>JEAN KIRSTEIN</h3>
                 <p><b>Estado:</b> vivo</p>
                 <p><b>Edad:</b> 18</p>
-                <p><b>Jean kirstein</b> siendo uno de los  mejores soldados, tiene la tarea, junto  con otros de sus compañeros
+                <p><b>Jean kirstein</b> forma parte del  <b>escudaron de Levi</b>, encargado de proteger a Eren y a Historia 
+                    de Kenny y sus tropas,  en este escuadron deberá aprender a enfrentarse y  <b>matar</b> a otros humanos.
+                    Siendo uno de los  mejores soldados, tiene la tarea, junto  con otros de sus compañeros
                     de proteger a Eren mientras este trata de tapar el agujero de Shiganshina,  es aquí donde deben
                     enfrentarse a Reiner, quien los estaba esperando. Finalmente logran vencerlo.
                 </p>
@@ -203,7 +209,10 @@
             <h3>SASHA BLOUSE</h3>
                 <p><b>Estado:</b> viva</p>
                 <p><b>Edad:</b> 19</p>
-                <p>Sasha Blouse 
+                <p><b>Sasha Blouse</b> forma parte del escuadro de Levi</b> encargado de proteger a Eren e Historia de
+                    ser secuestrados por Kenny, se le encarga, junto  con Jean matar a 2 miembros del  cuerpo de 
+                    policia, pero tras enterarse que son excompañeros de Annie, deciden perdonarlos y uno de ellos
+                    se une al cuerpo de exploración. 
                 </p>
             </div>
             <div class="bloque">
@@ -215,7 +224,10 @@
             <h3>CONNIE SPRINGER</h3>
                 <p><b>Estado:</b> vivo</p>
                 <p><b>Edad:</b> 18</p>
-                <p>Connie Springer 
+                <p><b>Connie Springer</b> forma parte del <b>escuadro de Levi</b> encargado de proteger a Eren e Historia de
+                    Kenny. Más adelante,  formando parte de  las tropas que lucharán por <b>recuperar Shiganshina</b>, debe 
+                    enfrentarse a sus  viejos  amigos Reiner  y Bertolt, manteniendo una pelea con el  primero de ellos
+                    mientras Eren y Armin se encargan del segundo. 
                 </p>
             </div>
             <div class="bloque">
@@ -359,6 +371,10 @@
 
         </script>
     </article>
+
+    <a class="irarriba" href="#"><i class="fa fa-arrow-up"></i></a>
+
+
     <footer>
   
        

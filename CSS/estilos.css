@@ -1,3 +1,4 @@
+html{ scroll-behavior: smooth;}
 *{  
     margin:0 ;
     padding:0 ;
@@ -192,15 +193,17 @@ footer a{
 .bloque{
     display: inline-block;
     width: 25%;
-    padding-top: 5%;
- 
-    padding: 1%;
+    padding-top: 50px;
+
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
 }
 
 .descripcion{
    
     justify-content: right;
-    padding-top: 5%;
+ 
     padding-left: 2%;
     display: inline-block;
     width: 72%;
@@ -312,6 +315,28 @@ form div{
     max-width: 240px;
     max-height: 240px;
 }
+.irarriba{
+    display:none;
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+    font-size: 22;
+}
+.irarriba:hover{
+    transform: scale(1.1);
+    background-color: rgb(240, 177, 95);
+    font-size: 30;
+}
+.nueva-clase{
+    display:block;
+}
 
 
 
@@ -418,6 +443,16 @@ form div{
         width: 100%;
         text-align: center;
     }
+    section.datos div.bloque{
+        display: block;
+        text-align: center;
+    }
+    section.datos div.bloque  img{
+        width: auto;
+        height: auto;
+     
+    }
+
     .bloque img{
         width: 95%;
     }

@@ -6,53 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <title>Proyecto SNK</title>
+    <link href="CSS/lightbox.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js">  </script>
+    <title>SNK:  Guía cautelosa</title>
 </head>
 <body>
 
-<header>
+    <header>
                         
         
-    <div>
-        <a href="index.html">
-            <img src="Imagenes/logo.png" alt="logo shingeki">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li>Personajes
-               <ul>
-                   <li><a href="personajes1.html">Temporada 1</a></li>
-                   <li><a href="personajes2.html">Temporada 2</a></li>
-                   <li><a href="personajes3.html">Temporada 3</a></li>
-                   <li><a href="personajes4.html">Temporada 4</a></li>
-               </ul>
-           </li>
-          
-           <li>Episodios
-               <ul>
-                   <li><a href="episodios1.html">Temporada 1</a></li>
-                   <li><a href="episodios2.html">Temporada 2</a></li>
-                   <li><a href="episodios3.html">Temporada 3</a></li>
-                   <li><a href="episodios4.html">Temporada 4</a></li>
-               </ul>
-           </li>
-           
-           <li><a href="Otros contenidos.html">Extras</a></li>
-           <li><a href="contacto.html">Contacto</a></li>
-           <li><a href="#">Galeria</a></li>
-           
-           
-       </ul>
-   
-    
-   
-    </nav>
+        <div>
+            <a href="index.html">
+                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
+            </a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menubarra" class="barratop">
+            <ul>
+                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                    <ul id="sub1" class="per">
+                        <li><a href="personajes1.html">Temporada 1</a></li>
+                        <li><a href="personajes2.html">Temporada 2</a></li>
+                        <li><a href="personajes3.html">Temporada 3</a></li>
+                        <li><a href="personajes4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+               
+                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                    <ul id="sub2" class="epi">
+                        <li><a href="episodios1.html">Temporada 1</a></li>
+                        <li><a href="episodios2.html">Temporada 2</a></li>
+                        <li><a href="episodios3.html">Temporada 3</a></li>
+                        <li><a href="episodios4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Otros contenidos.html">Extras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Galería.html">Galería</a></li>
+                
+                
+            </ul>
+        
+       
+        </nav>
 
-</header>
+    </header> 
     <h1>PERSOANJES DE LA TEMPORADA 4</h1>
     <h2 class="centro">Haz click en un personaje para ver su descripción</h2>
     
@@ -83,21 +87,21 @@
         <section class="datos" id="datoseren1">
             <div class="descripcion">
             <h3>EREN JEAGER</h3>
-                <P>Estado: fallecido</P>
-                <p>Edad: 20</p>
-                <p>Eren jeager empieza latemporada  infiltrado en Marley,  tras confrontar a Reiner se revela y
+                <P><b>Estado:</b> fallecido</P>
+                <p><b>Edad:</b> 20</p>
+                <p><b>Eren jeager</b> empieza la temporada  infiltrado en <b>Marley</b>,  tras confrontar a Reiner se revela y
                     comienza un ataque a la ciudad enemiga. Aqui se nos muestra como el odio hacia los titanes
                     y el deseo de libertad que se cumpliría al eliminarlos fue transferido a la gente de afuera de
                     la isla, ellos son los nuevos enemigos. Se nos cuenta que el verdadero  poder de su titán es ver
                     el futuro y el pasado desde el punto de vista  de los portadores del mismo.
-                    A lo largo de la temporada Eren se vuelve cada vez más
-                    agresivo y se va alejando de sus amigos, incluso llegando a atacar a Armin y Mikasa. Comienza un
+                    A lo largo de la temporada <b>Eren</b> se vuelve cada vez más
+                    agresivo y se va alejando de sus amigos, incluso llegando a atacar a <b>Armin y Mikasa.</b> Comienza un
                     movimiento seguido por muchos de los soldados, quienes lo idolatran como el salvador. Luego de
-                    engañar a su medio hermano Zeke, Eren obtiene los poderes del titán fundador y da inicio a 
+                    engañar a su medio hermano <b>Zeke</b>, Eren obtiene los poderes del <b>titán fundador</b> y da inicio a 
                     su plan de acabar con la humanidad exceptuando a la gente de la isla. Eren pasa de ser el protagonista
-                    a cumplir un papel de antagonista. Finalmente Eren muere a manos de Mikasa para revelarnos su amor
-                    por ella,  así  como  la verdad detras de su plan para salvar a sus amigos, incluso sabiendo los
-                    resultados.
+                    a cumplir un <b>papel de antagonista.</b> Finalmente Eren muere, despues de <b>matar al 80% de la población
+                    mundial,</b> a manos de Mikasa para revelarnos su amor por ella,  así  como  la verdad detras de su plan 
+                    para salvar a sus amigos, incluso sabiendo los resultados.
                 </p>
             </div>
             <div class="bloque">
@@ -107,15 +111,15 @@
         <section class="datos" id="datosmikasa1">
             <div class="descripcion">
             <h3>MIKASA ACKERMAN</h3>
-                <p>Estado: viva</p>
-                <p>Edad: 22</p>
-                <p>Mikasa Ackerman empieza la temporada mostrando su descontento con el plan de Eren de atacar
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> 22</p>
+                <p><b>Mikasa Ackerman</b> empieza la temporada mostrando su descontento con el plan de Eren de atacar
                     Marley,  pero sin embargo,  una vez más, nos asegura que su prioridad es él y que por ello
                     lo seguirá igualmente.  A lo  largo de la temporada Mikasa verá como Eren se aleja de ella
                     y se va volviendo más  real el plan de aniquilar a la raza humana, esto la llevará a enfrentar
                     el  dilema de que hará en caso de ser necesario matar a Eren. Al  final  de la serie, luego de 
-                    que Eren asesine a la mayor parte de la población, Mikasa mata a Eren para salvar al mundo. 
-                    Se muestra el amor que Mikasa sentía por Eren.  
+                    que Eren asesine a la mayor parte de la población, Mikasa <b>mata a Eren</b> para salvar al mundo. 
+                    Se muestra el amor que Mikasa sentía por él.  
                 </p>
             </div>
             <div class="bloque">
@@ -125,13 +129,14 @@
         <section class="datos" id="datosarmin1">
             <div class="descripcion">
             <h3>ARMIN ARLERT</h3>
-                <p>Estado: vivo</p>
-                <p>Edad: 20</p>
-                <p>Armin Arlert al inicio de la temporada siue el plan de Eren utilizando su poder de titán colosal
+                <p><b>Estado:</b> vivo</p>
+                <p><b>Edad:</b> 20</p>
+                <p><b>Armin Arlert</b> al inicio de la temporada siue el plan de Eren utilizando su poder de titán colosal
                     para el ataque a Marley, sin embargo a lo largo de la temporada se ve como Armin está  cada vez
                     más en contra de las ideas de su amigo por lo  que terminará formando parte del grupo que tratará
-                    de detenerlo. A su vez de reencuentra con Annie con quien manteine una buena relación para al final
-                    estar juntos. Luego de la muerte de Hange, hereda el puesto de  comandante de la legión.
+                    de detenerlo. A su vez de reencuentra con <b>Annie</b> con quien manteine una buena relación para al final
+                    estar juntos. Luego de la muerte de Hange, hereda el puesto de <b>comandante de la legión.</b> A pesar  de 
+                    que participó para detener a Eren, Armin realmente sufrió  la muerte de su amigo.
                 </p>
             </div>
             <div class="bloque">
@@ -141,13 +146,13 @@
         <section class="datos" id="datoslevi1">
             <div class="descripcion">
             <h3>LEVI ACKERMAN</h3>
-                <p>Estado: vivo</p>
-                <p>Edad: +30</p>
-                <p>Levi Ackerman se presenta en el ataque a Marley, capturando a Zeke, quien en realidad
+                <p><b>Estado:</b> vivo</p>
+                <p><b>Edad:</b> +30</p>
+                <p><b>Levi Ackerman</b> se presenta en el ataque a Marley, capturando a Zeke, quien en realidad
                     traiciona a Marley por un plan con su medio hemano, sin embargo es puesto bajo vigilancia
-                    del  soldado más fuerte de la humanidad y de sus tropas. Tras un intento de escape Zeke logra
+                    del  soldado más fuerte de la humanidad y de sus tropas. Tras un intento de escape, <b>Zeke</b> logra
                     herir a Levi con una explosión, donde pierde un ojo y sufre daños en todo el cuerpo. Aún así logra
-                    enfrentarse a Eren en elcombate final donde pierde la capacidad de caminar.   
+                    enfrentarse a Eren en el combate final donde <b>mata a Zeke</b> y pierde la capacidad de caminar.   
                 </p>
             </div>
             <div class="bloque">
@@ -157,13 +162,13 @@
         <section class="datos" id="datoshange1">
             <div class="descripcion">
             <h3>HANGE ZOE</h3>
-                <p>Estado: fallecida</p>
-                <p>Edad: Desconocida</p>
-                <p>Hange Zoe durante la temporada lidia con el mando de sus tropas frente a la revolución 
+                <p><b>Estado:</b> fallecida</p>
+                <p><b>Edad:</b> Desconocida</p>
+                <p><b>Hange Zoe</b> durante la temporada lidia con el mando de sus tropas frente a la revolución 
                     comandada por Eren.  Asume un papel de lider del grupo que tratará de salvar a la humanidad
                     a pesar de que se muestra agotada por el  puesto que heredó de Erwin. Es  quien encuentra, salva 
-                    y trata las heridas de Levi, evitando su muerte. Finalmente Hange, buscando conseguir tiempo 
-                    para su equipo, se sacrifica.
+                    y trata las heridas de <b>Levi,</b> evitando su muerte. Finalmente Hange, buscando conseguir tiempo 
+                    para su equipo, <b>se sacrifica.</b>
                 </p>
             </div>
             <div class="bloque">
@@ -173,15 +178,15 @@
         <section class="datos" id="datosjean1">
             <div class="descripcion">
             <h3>JEAN KIRSTEIN</h3>
-                <p>Estado: vivo</p>
-                <p>Edad: 20</p>
-                <p>Jean kirstein es uno de los soldados que va en rescate de Eren en el ataque de Marley,
+                <p><b>Estado:</b> vivo</p>
+                <p><b>Edad:</b> 20</p>
+                <p><b>Jean kirstein</b> es uno de los soldados que va en rescate de Eren en el ataque de Marley,
                     sin embargo  rápidamente muestra su descontento con el  plan luego de la muerte de su 
                     amiga Sasha. En primer lugar estará  en contra del golpe de estado dirigido por floch,
                     luego se verá tentado, ya que este le promete la tranquilidad que él siempre había soñado
                     para el y su familia. A pesar de la tentación, Jean opta por seguir a Mikasa y el  resto
-                    de los reclutas dirigidos por Hange, entre los cuales se encuentra Reiner, con quien 
-                    tiene una pelea tras enterarse que Marco murió por culpa de Reiner, Bertolt y Annie.
+                    de los reclutas dirigidos por Hange, entre los cuales se encuentra <b>Reiner,</b> con quien 
+                    tiene una pelea tras enterarse que <b>Marco</b> murió por culpa de Reiner, Bertolt y Annie.
                     Finalente logran trabajar en equipo. 
                 </p>
             </div>
@@ -192,11 +197,11 @@
         <section class="datos" id="datossasha1">
             <div class="descripcion">
             <h3>SASHA BLOUSE</h3>
-                <p>Estado: viva</p>
-                <p>Edad: 21</p>
-                <p>Sasha Blouse no tiene mucha aparición en esta temporada pues es asesinada por Gabi, sin
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Sasha Blouse</b> no tiene mucha aparición en esta temporada pues es <b>asesinada por Gabi,</b> sin
                     embargo se nos muestra como su muerte es uno de los primeros puntos que aleja a Eren
-                    del resto de reclutas, además de  mostrarnos como había formado una relación de amistad, casi
+                    del resto de reclutas, además de mostrarnos como había formado una relación de amistad, casi
                     de pareja, con un ciudadano de Marley.
                 </p>
             </div>
@@ -207,12 +212,12 @@
         <section class="datos" id="datosconnie1">
             <div class="descripcion">
             <h3>CONNIE SPRINGER</h3>
-                <p>Estado: vivo</p>
-                <p>Edad: 20</p>
-                <p>Connie Springer es uno de los soldados que participa en el ataque a Marley,  sin embargo
-                    rápidamente se molesta con Eren luego de que este se riera al enterarse de la muerte de Sasha.
+                <p><b>Estado:</b> vivo</p>
+                <p><b>Edad:</b> 20</p>
+                <p>Connie Springer</b> es uno de los soldados que participa en el ataque a Marley,  sin embargo
+                    rápidamente se molesta con Eren luego de que este se riera al enterarse de la <b>muerte de Sasha.</b>
                     Más adelante en la temporada, Connie se encuentra con Falco,  quien ya había heredado el  titán
-                    maníbula, por lo  que intenta engañarlo para dárselo de comer a su madre y que esta vuelva a ser
+                    maníbula, por lo  que intenta engañarlo para dárselo de comer a su <b>madre</b> y que esta vuelva a ser
                     una humana,  sin embargo Armin logra interceptarlo y detenerlo, logrando que recapacite.
                 </p>
             </div>
@@ -223,13 +228,13 @@
         <section class="datos" id="datosreiner1">
             <div class="descripcion">
             <h3>REINER BRAUN</h3>
-                <p>Estado: vivo</p>
-                <p>Edad: 22</p>
-                <p>Reiner Braun vuelve a Marley, su ciudad natal, donde se reencuentra con Eren, a quien
+                <p><b>Estado:</b> vivo</p>
+                <p><b>Edad:</b> 22</p>
+                <p><b>Reiner Braun</b> vuelve a Marley, su ciudad natal, donde se reencuentra con <b>Eren,</b> a quien
                     le explica lo ocurrido, mostrandole que estaba arrepentido por todo. A lo largo  de 
-                    la temporada vemos a un Reiner con secuelas por la misión fallida, por momentos se lo
+                    la temporada vemos a un Reiner con <b>secuelas</b> por la misión fallida, por momentos se lo
                     ve agotado, otros arrepentido,  pero sin embargo sabe que debe seguir adelante para 
-                    detener a Eren. Gran parte de esta temporada vemos a Reiner como un personaje principal
+                    detener a Eren. Gran parte de esta temporada vemos a Reiner como un <b>personaje principal</b>
                     quien une fuerzas con los soldados de Hange para salvar el mundo.
                     
                 </p>
@@ -241,14 +246,14 @@
         <section class="datos" id="datosannie">
             <div class="descripcion">
             <h3>ANNIE LEONHART</h3>
-                <p>Estado: viva</p>
-                <p>Edad: 16</p>
-                <p>Annie Leonhart vuelve a aparecer en esta temporada. Tras 5 años encerrada en un
-                    capullo endurecido, Annie por fin es libre solo para encontrarse con que Eren 
-                    desea acabar con su hogar, incluyendo a su padre, a quien le había prometido
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> 16</p>
+                <p><b>Annie Leonhart</b> vuelve a aparecer en esta temporada. Tras 5 años encerrada en un
+                    capullo endurecido, Annie por fin es <b>libre</b> solo para encontrarse con que Eren 
+                    desea acabar con su hogar, incluyendo a su <b>padre,</b> a quien le había prometido
                     volver y una de las motivaciones principales de este personaje. Rápidamente
                     Annie se une a los soldados que se enfrentaran a Eren, y comineza a formar una
-                    buena relación con Armin, primero de amistad para luego pasar a ser pareja.
+                    buena relación con <b>Armin,</b> primero de amistad para luego pasar a ser pareja.
                 
                 </p>
             </div>
@@ -259,15 +264,15 @@
         <section class="datos" id="datoszeke">
             <div class="descripcion">
             <h3>ZEKE JEAGER</h3>
-                <p>Estado: fallecido</p>
-                <p>Edad: 27</p>
-                <p>Zeke Jeager es el portador del titán bestia y medio hermano de Eren, con quien
+                <p><b>Estado:</b> fallecido</p>
+                <p><b>Edad:</b> 27</p>
+                <p><b>Zeke Jeager</b> es el <b>portador del titán bestia y medio hermano de Eren,</b> con quien
                     ideó un plan, luego de fingir ser capturado, fue llevado a la isla de Paradis.
-                    Allí comienza el plan atacando al escuadron de Levi, y dejandolo malherido.
+                    Allí comienza el plan atacando al escuadron de <b>Levi,</b> y dejandolo malherido.
                     Luego se reune con Eren para ejecutar con el fin de utilizar sus poderes para
                     volver esteril a la población de Eldia y que así se extingan los titanes, sin embargo
-                    es traicionado y secuestrado por su medio hermano. En el  enfrentamiento final, Levi lo
-                    mata cortandole la cabeza.                 
+                    es traicionado y secuestrado por su medio hermano. En el  enfrentamiento final, <b>Levi lo
+                    mata</b> cortandole la cabeza.                 
                 </p>
             </div>
             <div class="bloque">
@@ -277,15 +282,15 @@
         <section class="datos" id="datosgabi">
             <div class="descripcion">
             <h3>GABI BRAUN</h3>
-                <p>Estado: viva</p>
-                <p>Edad: 12</p>
-                <p>Gabi Braun hace su primera aparición en esta temporada, se nos presenta
-                    como una guerrera, es decir, es  candidata a heredar el  titán acorazado.
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> 12</p>
+                <p>Gabi Braun</b> hace su primera aparición en esta temporada, se nos presenta
+                    como una <b>guerrera,</b> es decir, es  candidata a heredar el  <b>titán acorazado.</b>
                     Como soldado de Marley muestra un gran deseo de servir a su nación y hace
-                    notar su profundo odio hacia los eldianos. Luego del  ataque a Marley logra
-                    infiltrarse en un zeppeling enemigo  donde mata a Sasha. Su odio irá desapareciendo
-                    a medida que conoce más a estas personas para finalmente unrise a ellos para detener
-                    a Eren. Gabi uno de los personajes principales de la temporada.
+                    notar su profundo <b>odio</b> hacia los eldianos. Luego del  ataque a Marley logra
+                    infiltrarse en un zeppeling enemigo  donde <b>mata a Sasha.</b> Su odio irá desapareciendo
+                    a medida que conoce más a estas personas,principalmente a la familia de Sasha, para finalmente 
+                    unrise a ellos para detener a Eren. Gabi uno de los <b>personajes principales</b> de la temporada.
                 
                 </p>
             </div>
@@ -296,19 +301,19 @@
         <section class="datos" id="datosfalco">
             <div class="descripcion">
             <h3>FALCO GRICE</h3>
-                <p>Estado: vivo</p>
-                <p>Edad: 12</p>
-                <p>Falco Grice hace su primera aparición en esta temporada, se nos presenta
-                    como un joven candidato a heredar un titán. A diferencia de otros candidatos
+                <p><b>Estado:</b> vivo</p>
+                <p><b>Edad:</b> 12</p>
+                <p>Falco Grice</b> hace su primera aparición en esta temporada, se nos presenta
+                    como un joven <b>candidato a heredar un titán.</b> A diferencia de otros candidatos
                     Falco parece no destacar en cuanto a sus habilidades, sin embargo desea superar
-                    a Gabi de esta responsabilidad pues sabe que quien hereda un titán muere 13 años
-                    después y él tiene sentiementos por ella. Junto con Gabi se infiltra en un zeppeling
+                    a Gabi</b> para protegerla de esta responsabilidad pues sabe que quien hereda un titán 
+                    muere 13 años después y él tiene sentiementos por ella. Junto con Gabi se infiltra en un zeppeling
                     enemigo lo que lo lleva a la isla de Paradis donde descubre que los Eldinos no son
                     demonios y se une en el intento de detener a Eren. En un encuentro entre Marley y 
                     las tropas de Eren, Falco es transformado en titán por Zeke, y para salvarlo
-                    Porco se deja comer, heredandole así el titán Mandíbula. Falco logra controlar
-                    sus nuevos poderes e incluso se convierte en el primer titán volador al despertar
-                    las alas de su titán. Es uno de los personajes principales de esta temporada.               
+                    <b>Porco se deja comer, heredandole así el titán Mandíbula.</b> Falco logra controlar
+                    sus nuevos poderes e incluso se convierte en el primer <b>titán volador</b> al despertar
+                    las alas de su titán. Es uno de los <b>personajes principales</b> de esta temporada.               
                 </p>
             </div>
             <div class="bloque">
@@ -318,15 +323,15 @@
         <section class="datos" id="datosporco">
             <div class="descripcion">
             <h3>PORCO GALLIARD</h3>
-                <p>Estado: fallecido</p>
-                <p>Edad: desconocida</p>
-                <p>Porco Galliard hace su primera aparación en esta temporada, se nos presenta
-                    como el  heredero del titán mandíbula, esto quiere decir que es quien se 
+                <p><b>Estado:</b> fallecido</p>
+                <p><b>Edad:</b> desconocida</p>
+                <p><b>Porco Galliard</b> hace su primera aparación en esta temporada, se nos presenta
+                    como el  <b>heredero del titán mandíbula,</b> esto quiere decir que es quien se 
                     comió a Ymir. Es uno de los grandes guerreros de Marley y demuestra su gran
                     habilidad y control del poder que tiene. Sin embargo es superado por los soldados
                     de la legión cuando  estos atacan Marley. Mantiene sierto resentimiento hacia
                     Reiner pues este heredó el titán acorazado a pesar de ser peor soldado.
-                    Finalmente, tras ver a Falco convertido en titán, decide sacriicarse, dejandose 
+                    Finalmente, tras ver a Falco convertido en titán, <b>decide sacriicarse,</b> dejandose 
                     comer y heredandole el titán mandíbula.            
                 </p>
             </div>
@@ -337,15 +342,15 @@
         <section class="datos" id="datospieck">
             <div class="descripcion">
             <h3>PIECK FINGER</h3>
-                <p>Estado: viva</p>
-                <p>Edad: desconocida</p>
-                <p>Pieck Finger hace su primera aparición en esta temporada, se nos presenta
-                    como la portadora del titán carguero,  como una inteligente y astuta guerrera
-                    de Marley. Muestra su preocupación por otros soldados, principalmente por Gabi y
-                    Falco. Llega a encontrarse con Eren, a quien le dice que lo ayudará, sin embargo
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> desconocida</p>
+                <p><b>Pieck Finger</b> hace su primera aparición en esta temporada, se nos presenta
+                    como la <b>portadora del titán carguero,</b>  como una inteligente y astuta guerrera
+                    de Marley. Muestra su preocupación por otros soldados, principalmente por <b>Gabi y
+                    Falco.</b> Llega a encontrarse con Eren, a quien le dice que lo ayudará, sin embargo
                     rápidamente se muestran sus verdaderas intenciones afirmando que hara lo  necesario
                     para  frenarlo. Se une al grupo de Hange para intentar salvar al mundo.  Utiliza sus 
-                    podesres de titán para escapar y transpurtar a su equipo.
+                    podesres de titán para escapar y transportar a su equipo.
                 </p>
             </div>
             <div class="bloque">
@@ -355,11 +360,11 @@
         <section class="datos" id="datoshistoria">
             <div class="descripcion">
             <h3>HISTORIA REISS</h3>
-                <p>Estado: viva</p>
-                <p>Edad: 21</p>
-                <p>Historia Reiss es la reina de Paradis, siendo la única con sangre real. No presta su apoyo 
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Historia Reiss</b> es la <b>reina de Paradis,</b> siendo la única con sangre real. No presta su apoyo 
                     a Eren respecto a su plan,  sin embargo tampoco trata de detenerlo. Al tener sangre real debe
-                    tener herederos por lo que se casa y queda embarazada.               
+                    tener herederos por lo que <b>se casa y queda embarazada.</b>               
                 </p>
             </div>
             <div class="bloque">
@@ -369,11 +374,11 @@
         <section class="datos" id="datosyelena">
             <div class="descripcion">
             <h3>YELENA</h3>
-                <p>Estado: viva</p>
-                <p>Edad: desconocida</p>
-                <p>Yelena hace su primera  aparición en esta temporada, se nos presenta
-                    como una ciudadana de Marley aliada de Eren, siendo una seguidora fanática de Zeke
-                    y su plan, viendolos casi como dioses. Yelena es la primera en hablar con Eren sobre
+                <p><b>Estado:</b> viva</p>
+                <p><b>Edad:</b> desconocida</p>
+                <p><b>Yelena</b> hace su primera  aparición en esta temporada, se nos presenta
+                    como una ciudadana de Marley aliada de Eren, siendo una seguidora <b>fanática de Zeke</b>
+                    y su plan, viendolo casi como un dios. Yelena es la primera en hablar con Eren sobre
                     el plan con la exitosa intención de convencerlo de reunirse con Zeke. Hará todo por
                     que el plan se lleve a cabo. Finalmente es tomada como rehen por el  grupo de Hange. 
                 </p>
@@ -385,15 +390,15 @@
         <section class="datos" id="datosfloch">
             <div class="descripcion">
             <h3>FLOCH FORSTER</h3>
-                <p>Estado: fallecido</p>
-                <p>Edad: 21</p>
-                <p>Floch Forster se presenta en esta temporada con un caracter fuerte y frío, pues 
+                <p><b>Estado:</b> fallecido</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Floch Forster</b> se presenta en esta temporada con un caracter fuerte y frío, pues 
                     desarrollo un odio intenso hacia las personas de afuera de la isla,  lo que lo
-                    llevó a convertirse en la mano derecha de Eren, a quien consideraba como el único
-                    que podía salvar al nuevo imperio eldiano. Floch fue el lider de facto de la facción,
+                    llevó a convertirse en la <b>mano derecha de Eren,</b> a quien consideraba como el único
+                    que podía salvar al nuevo imperio eldiano. Floch fue el <b>lider de facto de la facción,</b>
                     liderando el golpe un estado en el  cual asesinó  a varios de sus ex compañeros. Finalmente
-                    Gabi le dispara, y aunque no logra matarlo instantaneamente, en su desea de evitar que detengan 
-                    el plan de Eren, Floch sigue al grupo de Hange y tras dispararle a un avión y dañarlo, fallece desnagrado.               
+                    Gabi le dispara, y aunque no logra matarlo instantaneamente, en su deseo de evitar que detengan 
+                    el plan de Eren, Floch sigue al grupo de Hange y tras dispararle a un avión y dañarlo, <b>fallece desnagrado.</b>               
                 </p>
             </div>
             <div class="bloque">
@@ -420,6 +425,10 @@
 
         </script>
     </article>
+
+    <a class="irarriba" href="#"><i class="fa fa-arrow-up"></i></a>
+
+
     <footer>
   
        

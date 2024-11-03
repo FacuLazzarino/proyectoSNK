@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <title>Proyecto SNK</title>
+    <link href="CSS/lightbox.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js">  </script>
+    <title>SNK:  Guía cautelosa</title>
 </head>
 <body>
     <header>
@@ -17,41 +21,41 @@
         
         <div>
             <a href="index.html">
-                <img src="Imagenes/logo.png" alt="logo shingeki">
+                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
             </a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menubarra" class="barratop">
             <ul>
-                <li>Personajes
-                   <ul>
-                       <li><a href="personajes1.html">Temporada 1</a></li>
-                       <li><a href="personajes2.html">Temporada 2</a></li>
-                       <li><a href="personajes3.html">Temporada 3</a></li>
-                       <li><a href="personajes4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
-              
-               <li>Episodios
-                   <ul>
-                       <li><a href="episodios1.html">Temporada 1</a></li>
-                       <li><a href="episodios2.html">Temporada 2</a></li>
-                       <li><a href="episodios3.html">Temporada 3</a></li>
-                       <li><a href="episodios4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
+                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                    <ul id="sub1" class="per">
+                        <li><a href="personajes1.html">Temporada 1</a></li>
+                        <li><a href="personajes2.html">Temporada 2</a></li>
+                        <li><a href="personajes3.html">Temporada 3</a></li>
+                        <li><a href="personajes4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
                
-               <li><a href="Otros contenidos.html">Extras</a></li>
-               <li><a href="contacto.html">Contacto</a></li>
-               <li><a href="#">Galeria</a></li>
-               
-               
-           </ul>
-       
+                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                    <ul id="sub2" class="epi">
+                        <li><a href="episodios1.html">Temporada 1</a></li>
+                        <li><a href="episodios2.html">Temporada 2</a></li>
+                        <li><a href="episodios3.html">Temporada 3</a></li>
+                        <li><a href="episodios4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Otros contenidos.html">Extras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Galería.html">Galería</a></li>
+                
+                
+            </ul>
         
        
         </nav>
 
-    </header>
+    </header> 
     <h1>OTROS CONTENIDOS</h1>
     <article>
         <section class="izq">
@@ -69,7 +73,7 @@
                 <p class="titulo">El Cuaderno de Ilse</p>
                 <p>Cuenta la historia de Ilse Langnar, una soldado que logro interactuar con un titán 
                     y registró su experiencia en su diario, esta es asesinada.El diario es encontrado
-                    por Hange ], Levi y otros soldados, quienes leen los pasajes.
+                    por Hange, Levi y otros soldados, quienes leen los pasajes.
                 </p>
             </div>
             <div class="bloque">
@@ -181,9 +185,9 @@
         </section>
         
         <section class="izq">
-            <h2>Mangas</h2>
           
             <div class="detalle">
+                <h2>Mangas</h2>
                 <p>Manga es la palabra japonesa para designar las historietas en general. Fuera de Japón, 
                 se utiliza para referirse a las historietas de origen japonés.
                 Shingeki no Kyojin es una serie de manga japonesa escrita e ilustrada por Hajime Isayama. 
@@ -194,13 +198,16 @@
                 y obtuvo diversos premios y reconocimientos. En la encuesta realizada por la cadena de televisión Japonesa 
                 TV Asahi para elegir los 100 Mejores mangas de la historia, Shingeki no Kyojin alcanzó el puesto número 6.
                 </p>
-            
-                <img src="Imagenes/anniecarnet.webp" alt="">
+            </div>
+            <div class="bloque">
+                <img src="Imagenes/manga.webp" alt="Manga de attack on titan">
             </div>
         </section>
         
       
     </article>
+
+    <a class="irarriba" href="#"><i class="fa fa-arrow-up"></i></a>
 
     <footer>
   
@@ -225,5 +232,7 @@
             </a>
    
     </footer>
+
+  
     
 </body>

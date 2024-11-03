@@ -6,52 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <title>Proyecto SNK</title>
+    <link href="CSS/lightbox.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js">  </script>
+    <title>SNK:  Guía cautelosa</title>
 </head>
 <body>
     <header>
-                            
-            
+                        
+        
         <div>
             <a href="index.html">
-                <img src="Imagenes/logo.png" alt="logo shingeki">
+                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
             </a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menubarra" class="barratop">
             <ul>
-                <li>Personajes
-                   <ul>
-                       <li><a href="personajes1.html">Temporada 1</a></li>
-                       <li><a href="personajes2.html">Temporada 2</a></li>
-                       <li><a href="personajes3.html">Temporada 3</a></li>
-                       <li><a href="personajes4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
-              
-               <li>Episodios
-                   <ul>
-                       <li><a href="episodios1.html">Temporada 1</a></li>
-                       <li><a href="episodios2.html">Temporada 2</a></li>
-                       <li><a href="episodios3.html">Temporada 3</a></li>
-                       <li><a href="episodios4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
+                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                    <ul id="sub1" class="per">
+                        <li><a href="personajes1.html">Temporada 1</a></li>
+                        <li><a href="personajes2.html">Temporada 2</a></li>
+                        <li><a href="personajes3.html">Temporada 3</a></li>
+                        <li><a href="personajes4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
                
-               <li><a href="Otros contenidos.html">Extras</a></li>
-               <li><a href="contacto.html">Contacto</a></li>
-               <li><a href="#">Galería</a></li>
-               
-               
-           </ul>
-       
+                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                    <ul id="sub2" class="epi">
+                        <li><a href="episodios1.html">Temporada 1</a></li>
+                        <li><a href="episodios2.html">Temporada 2</a></li>
+                        <li><a href="episodios3.html">Temporada 3</a></li>
+                        <li><a href="episodios4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Otros contenidos.html">Extras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Galería.html">Galería</a></li>
+                
+                
+            </ul>
         
        
         </nav>
-    
-    </header>
+
+    </header> 
     <h1>EPISODIOS DE LA TEMPORADA 4</h1>
     <article>
         <div class="bloque">
@@ -59,14 +63,14 @@
         </div>
         <div class="descripcion">
             <p class="titulo">El otro lado del mar</p>
-            <p>El Ejército de Marley combate en el Fuerte Slava para acabar el conflicto con las Fuerzas Aliadas 
+            <p><b> El Ejército de Marley</b> combate en el Fuerte Slava para acabar el conflicto con las Fuerzas Aliadas 
                 del Medio Oriente. Uno de los candidatos a guerrero realiza un ataque sorpresa al tren blindado que 
-                prevenía a Marley de desplegar sus Titanes, dando un resultado satisfactorio. El Titán Carguero y 
-                el Mandíbula se encargan de despejar las trincheras enemigas para que Zeke Jaeger y Reiner Braun puedan 
+                prevenía a Marley de desplegar sus Titanes, dando un resultado satisfactorio. <b> El Titán Carguero y 
+                el Mandíbula</b> se encargan de despejar las trincheras enemigas para que Zeke Jaeger y Reiner Braun</b> puedan 
                 comenzar el ataque aéreo al Fuerte, usando, además, titanes puro creados por el primero, quien, además, 
                 busca hundir la flota enemiga. Sin embargo, esta logra contraatacar con el uso de artillería pesada y 
                 el Acorazado queda muy herido al hacer de escudo. El resultado recuerda a Marley la necesidad de 
-                recuperar al Titán Fundador.
+                <b> recuperar al Titán Fundador.</b>
             </p>
         </div>
         <div class="bloque">
@@ -77,15 +81,13 @@
             <p>Marley, después de su ajustada victoria sobre las Fuerzas Aliadas del Medio Oriente, reconoce que la 
                 era de su dominio mediante el uso de Titanes está llegando a su fin. Con el objetivo de reestructurar 
                 y modernizar su ejército para adaptarse a una realidad post-Titanes, Marley planea revivir 
-                la Operación Isla Paradis para capturar el Titán Fundador. Sin embargo, tomar la isla no será fácil, 
-                ya que ningún barco de Marley ha regresado en los últimos tres años, lo que sugiere que la Isla Paradis 
-                posee al menos dos de los Nueve Titanes.
+                la Operación Isla Paradis para<b>  capturar el Titán Fundador.</b> 
                 Los Guerreros y los candidatos a Guerreros regresan a Liberio, donde se reúnen con sus familias. 
-                Reiner Braun comparte algunas de sus experiencias en la isla, desconcertando a su prima Gabi al mencionar 
+                Reiner Braun comparte algunas de sus experiencias en la isla, desconcertando a <b> su prima Gabi</b> al mencionar 
                 que conoció a "todo tipo de personas" en lugar de condenarlas por completo. Al día siguiente, 
                 Zeke Jaeger informa a los Guerreros y a Colt Grice sobre un próximo festival en Liberio, 
                 al cual asistirán dignatarios extranjeros. Durante el festival, la familia Tybur, poseedora 
-                del Titán Martillo de Guerra, anunciará el plan para tomar la Isla Paradis.
+                del <b> Titán Martillo de Guerra,</b> anunciará el plan para <b> tomar la Isla Paradis.</b>
             </p>
         </div>
         <div class="bloque">
@@ -94,15 +96,14 @@
         <div class="descripcion">
             <p class="titulo">La puerta de la esperanza</p>
             <p>Reiner Braun rememora su juventud cuando se entrenaba como Guerrero para que su madre eldiana 
-                y su padre marleyano pudieran vivir juntos. A pesar de enfrentar numerosas dificultades y carencias, 
-                el sueño de Reiner mantuvo viva su determinación. Recuerda sus últimos días de entrenamiento 
+                y su padre marleyano pudieran vivir juntos. Recuerda sus últimos días de entrenamiento 
                 como Guerrero, cuando él, Bertholdt Hoover, Annie Leonhart y Marcel Galliard fueron 
                 enviados a la Isla Paradis para recuperar el Titán Fundador.
-                En su viaje hacia el muro, Reiner descubrió que Marcel lo había elegido para heredar 
-                el Titán Blindado en lugar de su hermano. El shock de Reiner empeoró cuando, poco después, 
-                un Titán devoró a Marcel. Los Guerreros perdieron la esperanza en su misión tras la muerte de Marcel, 
+                En su viaje hacia el muro, Reiner descubrió que Marcel <b> lo había elegido para heredar 
+                el Titán Blindado en lugar de su hermano.</b> El shock de Reiner empeoró cuando, poco después, 
+                <b> un Titán devoró a Marcel.</b> Los Guerreros perdieron la esperanza en su misión tras la muerte de Marcel, 
                 pero la determinación de Reiner de vivir y tener éxito animó a sus camaradas. Mientras tanto, 
-                Falco Grice sigue luchando con su entrenamiento como Guerrero, convenciéndose cada vez más de que no 
+                <b> Falco Grice</b> sigue luchando con su entrenamiento como Guerrero, convenciéndose cada vez más de que no 
                 tiene esperanza de heredar el Titán Blindado y salvar la vida de Gabi Braun. En su camino de regreso a 
                 casa desde la sede de los Guerreros, Falco se encuentra con un soldado herido que quiere hablar con él.
             </p>
@@ -121,7 +122,7 @@
                 se esfuerza tanto porque se preocupa por ella. Tanto los Guerreros como los candidatos disfrutan del 
                 festival el día de su llegada, y antes de que pueda comenzar la producción teatral de la noche, 
                 Falco le pide a Reiner Braun que vaya con él. Lo lleva a un sótano donde el señor Kruger está esperando 
-                y Reiner lo reconoce como Eren Jaeger.
+                y <b> Reiner lo reconoce como Eren Jaeger.</b>
             </p>
         </div>
         <div class="bloque">
@@ -129,20 +130,17 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Declaración de guerra</p>
-            <p>En el sótano de un edificio detrás del escenario, Reiner Braun se reencuentra con Eren Jaeger 
+            <p>En el sótano de un edificio detrás del escenario, Reiner Braun se reencuentra con Eren Jaeger</b>
                 por primera vez en cuatro años. Está aterrorizado pensando que Eren ha regresado para vengarse, 
                 pero Eren está tranquilo y explica que está aquí por la misma razón por la que Reiner fue 
-                a la Isla Paradis en primer lugar. Le pregunta a Reiner por qué atacó en primer lugar, y al entender 
-                su punto de vista, concluye que los dos son iguales. Dadas sus situaciones, no tuvieron elección, 
-                ni entonces ni ahora.
-                En el propio escenario, Willy Tybur presenta una producción teatral sobre la historia eldiana tal 
-                como es conocida por el resto del mundo, solo para revelar que el verdadero final de la 
-                Gran Guerra de los Titanes fue obra del propio Rey Karl Fritz, quien colaboró con la familia Tybur 
-                para fabricar la historia de Helos. El Rey se aisló a sí mismo y a su pueblo en la Isla Paradis y hizo 
-                un juramento de renunciar a la guerra que sería impuesto a sus sucesores, lo que habría mantenido al 
+                a la Isla Paradis en primer lugar. 
+                En el propio escenario, Willy Tybur presenta una producción teatral sobre la historia eldiana solo para 
+                revelar que el verdadero final de la Gran Guerra de los Titanes fue obra del propio Rey Karl Fritz. 
+                El Rey se aisló a sí mismo y a su pueblo en la Isla Paradis e<b> hizo 
+                un juramento de renunciar a la guerra</b> que sería impuesto a sus sucesores, lo que habría mantenido al 
                 mundo a salvo de los Titanes, excepto que el Titán Fundador ha pasado ahora a manos de Eren, 
                 quien no está sujeto a las mismas restricciones que los de la línea de sangre real. Willy pide al 
-                mundo que se una a él mientras declara la guerra a Paradis.
+                mundo que se una a él mientras<b>  declara la guerra a Paradis.</b>
             </p>
         </div>
         <div class="bloque">
@@ -150,19 +148,16 @@
         </div>
         <div class="descripcion">
             <p class="titulo">El Titán Martillo de Guerra</p>
-            <p>Antes del festival en Liberio, Willy Tybur y Theo Magath son conscientes de que sus enemigos 
-                probablemente atacarán el evento, y hacen planes para aprovechar esta situación. En el presente, 
-                el Titán de Ataque de Eren Jaeger devora a Willy y comienza a masacrar a los asistentes del festival. 
-                Lara Tybur se transforma en el Titán Martillo de Guerra para enfrentarse a él, mientras que 
-                Pieck y Porco Galliard, que han sido rescatados, presencian la aparición del Cuerpo de Exploración. 
-                El Titán Martillo de Guerra derrota a Eren y le pregunta por sus últimas palabras, pero es salvado 
-                por Mikasa Ackermann, quien deshabilita al Titán en un ataque sorpresa.
+            <p>
+                <b> El Titán de Ataque de Eren Jaeger devora a Willy</b> y comienza a masacrar a los asistentes del festival. 
+                <b> Lara Tybur se transforma en el Titán Martillo de Guerra</b> para enfrentarse a él, mientras que 
+                <b> Pieck y Porco Galliard,</b> que han sido rescatados, presencian la aparición del Cuerpo de Exploración. 
                 Mientras tanto, el Comandante Magath ordena al ejército marleyano que converja en Liberio para atrapar 
                 al enemigo. Enfurecida por las muertes de Udo y Zofia, Gabi Braun se dirige hacia el campo de batalla. 
-                Mientras Mikasa se enfrenta nuevamente al Titán Martillo de Guerra reanimado, Eren descubre que 
+                Mientras Mikasa se enfrenta al Titán Martillo de Guerra, Eren descubre que 
                 Lara Tybur controla su Titán a través de un cable. Eren se transforma nuevamente y corta el cable, 
-                pero es atacado por el Titán de la Mandíbula antes de poder devorarlo. Eren es salvado 
-                por Levi Ackermann, y Galliard es rápidamente rodeado por más miembros del Cuerpo de Exploración.
+                pero es atacado por el Titán de la Mandíbula antes de poder devorarlo.<b>  Eren es salvado 
+                por Levi Ackermann,</b> y Galliard es rápidamente rodeado por más miembros del Cuerpo de Exploración.
             </p>
         </div>
         <div class="bloque">
@@ -170,22 +165,15 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Asalto</p>
-            <p>El Cuerpo de Exploración y los Guerreros se enfrentan mientras el Titán Bestia se une a la batalla. 
+            <p>El Cuerpo de Exploración y los Guerreros se enfrentan mientras <b> el Titán Bestia</b> se une a la batalla. 
                 Aunque Pieck se muestra inicialmente optimista sobre las posibilidades de Marley, 
-                la llegada del Titán Colosal de Armin Arlelt cambia el curso del combate cuando aniquila a todas las 
-                fuerzas militares en el puerto de Liberio. Porco Galliard se separa del grupo impulsivamente para 
-                atacar a Eren Jaeger, lo que brinda a Levi Ackermann la oportunidad de derribar al Titán Bestia. 
-                Pieck pronto es abrumada por los miembros del Cuerpo de Exploración y está a punto de ser asesinada 
-                cuando Falco Grice interviene.
+                la llegada del<b>  Titán Colosal de Armin Arlelt</b> cambia el curso del combate cuando aniquila a todas las 
+                fuerzas militares en el puerto de Liberio.
                 Galliard logra arrancar uno de los brazos del Titán de Ataque y lo golpea en la cabeza, pero Eren lo 
                 bloquea con el cristal de Lara Tybur, que inesperadamente es rayado por las garras del 
-                Titán de la Mandíbula. Cuando el dirigible del Cuerpo de Exploración llega para evacuar a sus soldados,
-                Galliard intenta cambiar de objetivo pero es atrapado por Mikasa Ackermann, quien corta las piernas de 
-                su Titán. Eren le quita los miembros restantes al Titán de la Mandíbula antes de introducir el cristal 
-                de Lara en su boca. Luego, fuerza sus mandíbulas para romper el cristal y traga la sangre y 
-                el fluido espinal del Titán Martillo de Guerra. Al darse cuenta de que Galliard será el siguiente en 
-                ser devorado, Falco y Gabi Braun comienzan a gritar por Reiner, quien despierta a tiempo para 
-                transformarse y distraer a Eren.
+                Titán de la Mandíbula. Eren le quita los miembros restantes al Titán de la Mandíbula antes de introducir el cristal 
+                de Lara en su boca. Luego, fuerza sus mandíbulas para romper el cristal y <b> traga la sangre y 
+                el fluido espinal del Titán Martillo de Guerra.</b> 
             </p>
         </div>
         <div class="bloque">
@@ -199,13 +187,11 @@
                 Gabi logra matar a Lobov y descubre cómo usar su equipo de movilidad tridireccional para subir al 
                 dirigible. Antes de que el hermano de Falco, Colt, pueda detenerlos, Gabi recoge el cable, llevándolos 
                 a ambos hacia arriba.
-                Una vez a bordo, Gabi logra disparar a Sasha Braus antes de ser abrumada junto a Falco por los miembros 
+                Una vez a bordo,<b>  Gabi logra disparar a Sasha Braus</b> antes de ser abrumada junto a Falco por los miembros 
                 del Cuerpo de Exploración. Después de escucharla hablar sobre llevar a cabo la voluntad de Zeke Jaeger, 
                 Jean Kirschtein lleva a los dos a otra habitación donde Zeke se está regenerando de la batalla 
                 simulada que tuvo con Levi Ackermann, revelando que Zeke en realidad estaba trabajando con el 
-                Cuerpo de Exploración. Todo había salido según el plan, salvo algunas equivocaciones, específicamente 
-                los dos niños. Sin embargo, Hange Zoë está descontenta con Eren por forzar al Cuerpo de Exploración 
-                a acudir en su ayuda, y cuando Sasha fallece a causa de sus heridas, Jean culpa las acciones de Eren 
+                Cuerpo de Exploración. <b> Cuando Sasha fallece</b> a causa de sus heridas, Jean culpa las acciones de Eren 
                 por su pérdida.
             </p>
         </div>
@@ -215,18 +201,13 @@
         <div class="descripcion">
             <p class="titulo">Voluntarios valientes</p>
             <p>Hace tres años, la Isla Paradis capturó a la tripulación de un barco marleyano gracias a la ayuda de 
-                los Voluntarios Anti-Marleyanos, quienes traicionaron a sus compañeros de tripulación. 
+                <b> los Voluntarios Anti-Marleyanos,</b> quienes traicionaron a sus compañeros de tripulación. 
                 Con la ayuda de los Voluntarios, el Cuerpo de Exploración descubre las capacidades militares de Marley 
                 y logra construir su propio puerto. Los Voluntarios fueron reunidos por Zeke Jaeger, quien les transmite 
-                un plan para proteger al pueblo eldiano a través de ellos. Eren concluye acertadamente que Zeke 
-                ha descubierto cómo evitar el juramento de Karl Fritz de renunciar a la guerra, y que juntos podrían 
-                utilizar la amenaza de despertar a los Titanes del Muro para mantener al resto del mundo a raya.
+                un plan para proteger al pueblo eldiano a través de ellos. Eren concluye acertadamente que <b> Zeke 
+                ha descubierto cómo evitar el juramento de Karl Fritz de renunciar a la guerra.</b>
                 En el presente, Sasha Braus es llorada por sus amigos y familiares, incluido Nicolo, 
-                uno de los marleyanos capturados, quien ahora tiene permiso para trabajar como chef. 
-                Deseando conectar con su familia en duelo, los invita a comer donde trabaja. Mientras tanto, Levi 
-                muestra a Zeke el lugar donde se quedará, en un bosque de árboles gigantes, y Dot Pyxis detiene a los 
-                Voluntarios Anti-Marleyanos para mantener a Zeke bajo control. Se disculpa por no poder confiar en 
-                ellos a pesar de lo útiles que han sido en los últimos años. Armin todavía está triste 
+                uno de los marleyanos capturados. Dot Pyxis detiene a los Voluntarios Anti-Marleyanos para mantener a Zeke bajo control. Armin todavía está triste 
                 por el reciente ataque a Liberio, pero siente que no tuvieron otra opción y lo compara con la 
                 experiencia de Annie Leonhart mientras habla con ella en su cristal.
             </p>
@@ -237,16 +218,12 @@
         <div class="descripcion">
             <p class="titulo">Un argumento justo</p>
             <p>Hace dos años, con la ayuda de Zeke Jaeger y los Voluntarios Anti-Marleyanos, la Isla Paradis 
-                estableció contacto con un antiguo aliado en la nación de Hizuru. Su enviada, Kiyomi Azumabito, 
-                presentó un plan en tres partes para mantener segura la isla hasta que llegue el momento en que no 
-                necesite amenazar al mundo con el Estruendo. Sin embargo, la ayuda de Hizuru provenía de la codicia y 
-                un año después se negaron a ayudar a Paradis a negociar el comercio con otras naciones con la esperanza 
-                de quedarse con las ganancias de los recursos de Paradis para sí mismos. Hange Zoë concluyó que el 
+                estableció contacto con un antiguo aliado en la nación de Hizuru. Hange Zoë concluyó que el 
                 Cuerpo de Exploración tendría que aventurarse en el mundo por sí mismos y conocer a las personas de 
                 primera mano.
-                En el presente, el comportamiento de Eren Jaeger desconcierta a quienes lo rodean, y sus amigos 
+                En el presente, <b> el comportamiento de Eren Jaeger desconcierta a quienes lo rodean,</b> y sus amigos 
                 intentan entender a la persona en la que se ha convertido en comparación con la persona que recuerdan. 
-                Historia Reiss está embarazada, lo que retrasa la transferencia del Titán Bestia de Zeke a ella debido 
+                <b> Historia Reiss está embarazada, lo que retrasa la transferencia del Titán Bestia</b> de Zeke a ella debido 
                 a la preocupación de que el proceso pueda dañarla o incluso poner en peligro la vida de su hijo por nacer.
             </p>
         </div>
@@ -255,20 +232,17 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Impostor</p>
-            <p>Gabi Braun y Falco Grice escapan de la prisión y encuentran refugio con la familia Braus, quienes los 
+            <p><b> Gabi Braun y Falco Grice</b> escapan de la prisión y encuentran refugio con <b> la familia Braus,</b> quienes los 
                 aceptan como dos fugitivos. Kaya, una de las huérfanas que vive y trabaja con ellos, se da cuenta de 
                 que en realidad son de Marley y los lleva al lugar donde su madre fue asesinada por un Titán hace 
-                cuatro años. Les pregunta qué había hecho su madre para merecer una muerte tan horrible y no puede 
-                aceptar la retórica de Gabi sobre la necesidad de pagar por los pecados de los eldianos cometidos hace 
-                mucho tiempo. Falco explica que su madre fue víctima de las circunstancias durante una misión anterior 
-                y, después de aceptarlo, Kaya se ofrece a llevarlos a conocer a un marleyano en el restaurante al que la 
+                cuatro años. Kaya se ofrece a llevarlos a conocer a un marleyano en el restaurante al que la 
                 familia Braus se dirige, con la esperanza de encontrar una 
                 forma de ayudar a Gabi y Falco a regresar a casa.
                 Mientras tanto, Hange Zoë se ve obligada a lidiar con la insubordinación cuando Floch Forster y otros 
                 tres miembros del Cuerpo de Exploración son descubiertos filtrando información sobre el encarcelamiento 
                 de Eren Jaeger. En Marley, el ejército se ha dado cuenta de que Zeke Jaeger ha fingido su muerte y 
                 probablemente se ha aliado con la Isla Paradis. En lugar de esperar seis meses para un ataque global, 
-                Reiner Braun sugiere que realicen un ataque sorpresa antes de que Zeke pueda idear un plan defensivo.
+                Reiner Braun sugiere que realicen un <b> ataque sorpresa</b> antes de que Zeke pueda idear un plan defensivo.
             </p>
         </div>
         <div class="bloque">
@@ -281,7 +255,7 @@
                 debatiría y pospondría los asuntos hasta que fuera demasiado tarde. Ni siquiera los otros 
                 Voluntarios Anti-Marleyanos estaban al tanto. Onyankopon le cuenta a Hange Zoë que Yelena fue quien los 
                 organizó, y que aquellos que dudaban de ellos solían morir en "accidentes".
-                En la sede del cuartel general, Dhalis Zachary es asesinado por una bomba colocada por los jaegeristas 
+                En la sede del cuartel general, <b> Dhalis Zachary es asesinado por una bomba colocada por los jaegeristas</b> 
                 infiltrados en el ejército. Alrededor de cien soldados desertan abiertamente en apoyo a Eren, 
                 muchos de ellos del Cuerpo de Exploración. Sabiendo que los seguidores de Eren quieren conectarlo con su 
                 hermano Zeke, Pyxis refuerza la seguridad para utilizar la ubicación de Zeke como moneda de cambio. 
@@ -294,18 +268,16 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Niños del bosque</p>
-            <p>Zeke Jaeger afirma haber utilizado gas mezclado con su fluido espinal para transformar a los habitantes 
-                de Ragako hace cuatro años. Alega que no quería hacerlo, pero fue para proporcionar cobertura mientras 
-                trabajaba para Marley. Sin embargo, Levi Ackermann desconfía de él, ya que independientemente de qué 
-                lado esté realmente Zeke, no parece lamentar las vidas que se perdieron.
+            <p><b> Zeke Jaeger</b> afirma haber utilizado gas mezclado con su fluido espinal para transformar a los habitantes 
+                de <b> Ragako</b> hace cuatro años. 
                 Nicolo atiende a la familia Braus en el restaurante donde trabaja. Gabi Braun y Falco Grice se ponen 
                 en contacto con él, esperando encontrar una forma de regresar a casa, pero Nicolo ataca a Gabi con 
-                una botella de vino cuando se entera de que ella es quien mató a Sasha Braus. Falco recibe el golpe en 
+                una botella de vino cuando se entera de que ella es <b> quien mató a Sasha Braus.</b> Falco recibe el golpe en 
                 su lugar y queda inconsciente. Tanto la familia Braus como los miembros del Cuerpo de Exploración 
                 intervienen, y Artur Braus decide renunciar a la venganza. Nicolo, rendido, pide a los miembros del 
-                Cuerpo de Exploración que limpien el vino de la boca de Falco, ya que probablemente está contaminado 
-                con el fluido espinal de Zeke. Antes de que puedan terminar de limpiar a Falco, Eren y los jaegeristas 
-                llegan y toman a todos como rehenes.
+                Cuerpo de Exploración que limpien el vino de la boca de Falco, ya que probablemente<b>  está contaminado 
+                con el fluido espinal de Zeke.</b> Antes de que puedan terminar de limpiar a Falco, <b> Eren y los jaegeristas 
+                llegan y toman a todos como rehenes.</b>
             </p>
         </div>
         <div class="bloque">
@@ -313,24 +285,18 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Salvajismo</p>
-            <p>Gabi Braun, llena de ansiedad, observa cómo Eren Jaeger, Mikasa Ackermann y Armin Arlelt entablan una 
-                conversación tensa. Armin cuestiona los motivos de Eren para atacar a Liberio, a lo que Eren afirma con 
-                determinación que fue su propia elección, mientras que Mikasa cree que está siendo manipulado. 
+            <p>Gabi Braun, llena de ansiedad, observa cómo <b> Eren Jaeger, Mikasa Ackermann y Armin Arlelt entablan una 
+                conversación tensa.</b>  Mikasa cree que está siendo manipulado. 
                 Esto enfurece a Eren, y comienza a criticar a Armin por dejarse influenciar por los recuerdos de 
                 Bertholdt Hoover, y a Mikasa por su herencia Ackermann. En un momento de desprecio intenso, 
-                Eren confiesa que siempre la ha odiado a Mikasa. La confrontación se intensifica y se convierte en una 
-                pelea física entre Armin y Eren, con Armin siendo rápidamente superado.
-                Mientras tanto, Levi Ackermann recibe la noticia de la muerte de Dhalis Zachary y le indica a un 
-                mensajero que informe a Dot Pyxis sobre su plan de consumir a Zeke. Perdido en sus pensamientos, 
+                <b>  Eren confiesa que siempre la ha odiado a Mikasa.</b>
+                Perdido en sus pensamientos, 
                 Levi es tomado por sorpresa cuando Zeke se libera de sus ataduras y emite un grito penetrante. 
-                Los compañeros de Levi, que estaban ocultos en los árboles cercanos, se transforman en Titanes y atacan. 
-                A pesar de su vacilación, Levi reúne su determinación y sacrifica a la horda, destrozándolos sin piedad. 
+                Los compañeros de Levi, que estaban ocultos en los árboles cercanos,<b>  se transforman en Titanes y atacan.</b> 
+                Levi reúne su determinación y sacrifica a la horda, destrozándolos sin piedad. 
                 Finalmente, alcanza a Zeke y lo obliga a transformarse en el Titán Bestia. Sin embargo, 
-                Levi aprovecha el Bosque de Titanes para tomar ventaja y derrotarlo. El cuerpo inconsciente de Zeke 
-                es arrastrado fuera del bosque.
-                
-                Mientras tanto, Floch Forster lidera a los Jaegeristas hacia la división de la Cuerpo de Entrenamiento 
-                ubicada en el distrito de Shiganshina.
+                Levi aprovecha el Bosque de Titanes para tomar ventaja y<b>  derrotarlo.</b> 
+           
             </p>
         </div>
         <div class="bloque">
@@ -341,8 +307,8 @@
             <p>Zeke Jaeger rememora su infancia y cómo fue obligado a formar parte del plan de sus padres para 
                 liberar a Eldia de Marley. Se hace amigo de Tom Xaver, un miembro del equipo de investigación de los 
                 Titanes, y jura heredar el Titán Bestia de él. Zeke afirma que se asegurará del éxito del plan para 
-                recuperar el Titán Fundador. Después de recordar sus memorias, Zeke activa la Lanza del Trueno, 
-                detonándola y tomando por sorpresa a Levi Ackermann.
+                recuperar el Titán Fundador. Después de recordar sus memorias, <b> Zeke activa la Lanza del Trueno, 
+                detonándola y tomando por sorpresa a Levi Ackermann.</b>
             </p>
         </div>
         <div class="bloque">
@@ -353,9 +319,9 @@
             <p>Floch Forster, Hange Zoë y varios Jaegeristas se dirigen hacia un Bosque de Árboles Gigantes 
                 cuando escuchan la explosión causada por Zeke Jaeger al activar una Lanza Trueno. Mientras Zeke sucumbe 
                 a sus heridas, un Titán se acerca a él y rasga su vientre, metiendo su cuerpo dentro.
-                Mientras tanto, Yelena tiene a Dot Pyxis y otros miembros disidentes del ejército reunidos en el 
+                Mientras tanto,<b>  Yelena</b> tiene a Dot Pyxis y otros miembros disidentes del ejército reunidos en el 
                 Distrito de Shiganshina. Eren Jaeger va a encontrarse con la encarcelada Gabi Braun, para que envíe 
-                una señal de auxilio a Marley a cambio de salvar a Falco Grice. Sin embargo, Pieck, disfrazada, 
+                una señal de auxilio a Marley a cambio de salvar a Falco Grice. Sin embargo,<b>  Pieck,</b> disfrazada, 
                 se acerca a Eren y afirma que desea ayudarlo a destruir Marley. Como prueba de sus intenciones, 
                 ofrece mostrar a Eren la ubicación de sus compañeros espías en la Isla Paradis.
             </p>
@@ -365,19 +331,16 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Juicio</p>
-            <p>La invasión marleyana al Distrito de Shiganshina comienza en serio. Porco Galliard, 
+            <p><b> La invasión marleyana</b> al Distrito de Shiganshina comienza en serio. Porco Galliard, 
                 Pieck Finger y Gabi Braun escapan del enfrentamiento en la azotea con Eren Jaeger y se encuentran 
                 con el General Theo Magath, quien ha traído una flota de dirigibles y un ejército de soldados. 
-                Equipan al Titán de Pieck, el Cart Titan, como una plataforma de artillería móvil para derribar al 
-                Titán Fundador de Eren. Debido a que aún no ha usado su poder, sospechan que solo puede hacerlo cuando 
-                está junto a Zeke Jaeger.
+                Equipan al Titán de Pieck como una plataforma de artillería móvil para derribar al 
+                Titán Fundador de Eren. Debido a que aún no ha usado su poder, sospechan que <b> solo puede hacerlo cuando 
+                está junto a Zeke Jaeger.</b>
                 Eren lucha junto a los Jaegeristas contra los marleyanos, pero gradualmente se ve abrumado por 
                 los Titanes enemigos y el constante bombardeo. Onyankopon teme que al final pierda y sea devorado. 
                 Corre para liberar a los amigos de Eren, que han sido encarcelados dentro de su propia sede militar, 
-                pero es recibido con escepticismo. Les gustaría detener la invasión, pero ayudar a Eren también 
-                significa apoyar el plan de eutanasia del cual no están de acuerdo. Armin Arlelt intenta sugerir que 
-                Eren solo está aparentando cooperar con Yelena para mantenerla bajo control, pero sus palabras son 
-                recibidas con silencio.
+                pero es recibido con escepticismo.
             </p>
         </div>
         <div class="bloque">
@@ -385,19 +348,15 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Ataque furtivo</p>
-            <p>Eren Jaeger es concedido un respiro por la llegada oportuna de su hermano mayor, Zeke, quien comienza 
+            <p>Eren Jaeger es concedido un respiro por la<b>  llegada oportuna de su hermano mayor, Zeke,</b> quien comienza 
                 a repeler a los demás Titanes que lo atacan, así como a atacar los dirigibles marleyanos en el aire. 
                 Después de cierta persuasión, los soldados que previamente estaban encarcelados por no cooperar con los 
-                Jaegeristas son liberados para que puedan ayudar a defender la Isla Paradis. Aquellos que no han bebido 
-                el vino contaminado con el fluido espinal de Zeke reciben equipo de movilidad omnidireccional, mientras 
-                que los demás se organizan a pie bajo el mando de Dot Pyxis. Sin embargo, reforzar a Eren resulta difícil 
-                y una artimaña de Pieck Finger y Theo Magath les permite disparar libremente su artillería contra Zeke, 
-                derribando su Titán Bestia de la Muralla María.
+                Jaegeristas son liberados para que puedan ayudar a defender la Isla Paradis.
                 Cuando Falco Grice sale de la sede junto con los soldados anteriormente encarcelados, avista a su hermano 
-                Colt. Nile Dawk reúne a los dos bajo el pretexto de contener a Falco en una casa, y los hermanos se van 
-                junto con Gabi Braun, quien finalmente se da cuenta de que no hay demonios en la isla, solo personas. 
-                Ella se disculpa con Falco por involucrarlo, lo que lo lleva a confesar sus sentimientos por ella, ya 
-                que teme convertirse pronto en un Titán. Al enterarse de que Falco ha bebido el fluido espinal, Colt 
+                Colt. Los hermanos se van 
+                junto con Gabi Braun, quien finalmente se da cuenta de que<b>  no hay demonios en la isla, solo personas.</b> 
+                Ella se disculpa con Falco por involucrarlo, lo que lo lleva a confesar sus sentimientos por ella,<b>  ya 
+                que teme convertirse pronto en un Titán.</b> Al enterarse de que Falco ha bebido el fluido espinal, Colt 
                 los apresura hacia Zeke, con la esperanza de que él no grite si Falco está entre los afectados.
             </p>
         </div>
@@ -408,16 +367,14 @@
             <p class="titulo">Dos hermanos</p>
             <p>Colt Grice suplica a Zeke Jaeger que no utilice el grito del Titán Bestia para evitar que su hermano 
                 Falco se convierta en un Titán. Zeke comprende y compara el cuidado de Colt por Falco con su propio 
-                cuidado por Eren. Sin embargo, Zeke procede a transformar no solo a Falco, sino a todos los soldados en 
-                el Distrito de Shiganshina que bebieron su fluido espinal. Los Titanes comienzan a atacar al ejército 
-                invasor de Marley y Zeke ordena al recién transformado Falco que ataque a Reiner Braun y libere a su 
-                propio hermano, Eren.
+                cuidado por Eren. Sin embargo,<b>  Zeke procede a transformar no solo a Falco, sino a todos los soldados en 
+                el Distrito de Shiganshina que bebieron su fluido espinal.</b> 
                 Theo Magath y su equipo de artillería disparan a Zeke a través de la nuca, pero él sobrevive 
                 fingiendo estar muerto y permitiendo que su Titán Bestia se disuelva. Al darse cuenta de esto, Eren 
                 atrapa a Reiner agarrándolo y endureciendo su Titán, mientras escapa por la nuca. Corre a pie para 
-                reunirse con Zeke, pero es decapitado por Gabi Braun, quien le dispara en el cuello con un 
-                rifle anti-Titán de alto calibre. Eren despierta en los Senderos junto a Zeke, quien explica que este 
-                es el lugar donde la familia real solía dar órdenes a su ancestro Ymir. Cuando Eren se niega a aceptar 
+                reunirse con Zeke, pero<b> es decapitado por Gabi Braun,</b> quien le dispara en el cuello con un 
+                rifle anti-Titán de alto calibre. <b> Eren despierta en los Senderos junto a Zeke,</b> quien explica que este 
+                es el lugar donde la familia real solía dar órdenes a <b> su ancestro Ymir.</b> Cuando Eren se niega a aceptar 
                 el plan de eutanasia de los Eldianos, Zeke jura usar el poder de Ymir para obligar a Eren a ver las 
                 cosas a su manera.
             </p>
@@ -427,19 +384,16 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Recuerdos del futuro</p>
-            <p>Zeke y Eren Jaeger viajan a través de los recuerdos de su padre, Grisha, mientras Zeke intenta mostrarle 
+            <p><b> Zeke y Eren Jaeger viajan a través de los recuerdos de su padre,</b> Grisha, mientras Zeke intenta mostrarle 
                 a Eren que Grisha solo lo veía como una herramienta. Sin embargo, en su lugar, Eren ve a Grisha dándole 
                 a Eren la libertad que Zeke nunca tuvo cuando era niño. La determinación de Eren y su disposición para 
-                luchar por su libertad son cosas que siempre ha tenido por sí mismo. Cuando Grisha reacciona a su 
-                presencia en sus recuerdos, Zeke se sorprende de que Grisha no lo haya olvidado.
+                luchar por su libertad son cosas que siempre ha tenido por sí mismo.
                 El día en que cae el Muro María, ven a Grisha enfrentarse a Frieda Reiss en la capilla subterránea. 
-                Debido al juramento de renunciar a la guerra, ella se niega a salvar a la gente de Wall Maria e insiste 
-                en que los Eldianos deben expiar los crímenes de sus ancestros aceptando el odio del mundo hacia ellos. 
                 Grisha revela que fue llevado aquí por recuerdos futuros que recibió a través del Titán de Ataque. 
                 Planea matarla para obtener el Titán Fundador y acabar con la línea de sangre real, pero vacila porque 
                 no quiere matar a niños. Eren interviene y, aprovechando el hecho de que Grisha puede oírlo a través de 
-                sus recuerdos futuros, lo convence de seguir adelante con el ataque. Después de la masacre, Grisha se 
-                disculpa con Zeke, diciendo que fue un padre terrible, y le pide que detenga a Eren.
+                sus recuerdos futuros, <b> lo convence de seguir adelante con el ataque.</b> Después de la masacre, Grisha se 
+                disculpa con Zeke, diciendo que fue un padre terrible,<b>  y le pide que detenga a Eren.</b>
             </p>
         </div>
         <div class="bloque">
@@ -447,18 +401,16 @@
         </div>
         <div class="descripcion">
             <p class="titulo">De ti, hace 2000 años</p>
-            <p>Zeke Jaeger es expulsado de los recuerdos de Grisha después de descubrir que Eren manipuló a su padre 
-                para que tomara el Titán Fundador del Rey de las Murallas. Sin embargo, Zeke se da cuenta de que la 
-                capacidad de Eren para ver el futuro tiene limitaciones, por lo que ordena a Ymir Fritz que elimine la 
+            <p>Zeke Jaeger es expulsado de los recuerdos de Grisha después de descubrir que <b> Eren manipuló a su padre 
+                para que tomara el Titán Fundador del Rey de las Murallas.</b> Zeke le ordena a Ymir Fritz que elimine la 
                 capacidad de todos los Eldianos de reproducirse. Eren se libera de sus cadenas para perseguirla y, al 
                 hacerlo, descubre su pasado.
                 Ymir fue esclavizada cuando era niña y, mientras era cazada como un deporte, entró en contacto con una 
                 criatura misteriosa que la transformó en un Titán gigante. El líder de la tribu que la esclavizó la 
                 utilizó a ella y a su nuevo poder para aumentar la fortuna de su pueblo y atacar a Marley. 
-                Tuvo tres hijas con ella antes de que Ymir muriera, salvándolo de un intento de asesinato. Después 
-                de su muerte, se ordenó a sus hijas que consumieran su carne para mantener sus poderes. Eren comprende 
+                Tuvo tres hijas con ella antes de que Ymir muriera, salvándolo de un intento de asesinato. <b>  Eren comprende 
                 su dolor y le dice a Ymir que no tiene que ser una esclava, que tiene una elección. En respuesta, en el 
-                mundo exterior, las Murallas se derrumban y comienza el Estruendo.
+                mundo exterior, las Murallas se derrumban y comienza el Estruendo.</b>
             </p>
         </div>
         <div class="bloque">
@@ -467,16 +419,16 @@
         <div class="descripcion">
             <p class="titulo">Deshielo</p>
             <p>Los Titanes creados por Zeke Jaeger ahora causan estragos en el distrito de Shiganshina mientras 
-                Eren y los Titanes de las Murallas marchan para aplastar al resto del mundo. Armin Arlelt, 
+                <b>  Eren y los Titanes de las Murallas marchan para aplastar al resto del mundo.</b> Armin Arlelt, 
                 Mikasa Ackermann y Jean Kirschtein organizan la defensa del distrito, mientras Conny Springer escapa
-                con un Falco Grice inconsciente, a quien planea alimentar a su madre para hacerla humana nuevamente.
+                con un Falco Grice inconsciente, a quien <b> planea alimentar a su madre para hacerla humana nuevamente.</b>
                 En las calles llenas de Titanes, Gabi Braun salva a Kaya de un Titán y la brecha entre ellas comienza a 
                 cerrarse. Después de que la lucha se calma, la familia Braus la lleva a conocer a Armin y Mikasa. 
                 Ella explica su intención de encontrar a Falco y luego irse, pero se horroriza al enterarse de los planes 
                 de Conny. Gabi le suplica a Armin que hable con Eren para que nadie más fuera de la isla tenga que morir, 
                 pidiéndole que golpee objetivos específicos como deshizo la endurecimiento del Titán Acorazado. 
                 Al escuchar esto, Armin se da cuenta de que todo el endurecimiento de los Titanes se ha deshecho, 
-                no solo el de las Murallas, lo que significa que Annie Leonhart ahora está libre.
+                no solo el de las Murallas, lo que significa que<b>  Annie Leonhart ahora está libre.</b>
             </p>
         </div>
         <div class="bloque">
@@ -484,7 +436,7 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Ocaso</p>
-            <p>Hitch Dreyse se reencuentra inesperadamente con Annie Leonhart y la ayuda a escapar de las ruinas del 
+            <p><b> Hitch Dreyse</b> se reencuentra inesperadamente con <b> Annie Leonhart</b> y la ayuda a escapar de las ruinas del 
                 distrito de Trost después del colapso de las Murallas y la marcha de los Titanes de las Murallas. 
                 Annie explica los complejos sentimientos que la han llevado hasta aquí y cómo lo único que quiere hacer 
                 ahora es reunirse con su padre. Sin embargo, Leonhart tiene problemas propios, ya que él y los demás 
@@ -493,7 +445,7 @@
                 Mientras tanto, Armin Arlelt y Gabi Braun intentan alcanzar a Conny Springer antes de que pueda 
                 sacrificar a Falco Grice para devolverle la humanidad a su madre. Floch consolida su control sobre lo 
                 que queda del ejército de la Isla Paradis, explicando que Eren Jaeger le confió sus planes hace diez meses.
-                 Fuera del distrito de Shiganshina, Hange Zoë se acerca a Pieck Finger y Theo Magath para hablar.
+                Fuera del distrito de Shiganshina,<b>  Hange Zoë se acerca a Pieck Finger y Theo Magath para hablar.</b>
             </p>
         </div>
         <div class="bloque">
@@ -504,12 +456,12 @@
             <p>Hange Zoë y Levi Ackermann llegan a un acuerdo para trabajar juntos con Theo Magath y Pieck Finger. 
                 Mientras tanto, Armin Arlelt intenta salvar a Falco Grice del intento de Conny Springer de alimentarlo 
                 con el Titán de su madre para restaurar su humanidad. Al darse cuenta de que Armin planea sacrificarse 
-                en su lugar, Conny deja caer a Falco para salvar a Armin, y los dos se reconcilian, con Conny resolviendo 
+                en su lugar,<b>  Conny deja caer a Falco para salvar a Armin,</b> y los dos se reconcilian, con Conny resolviendo 
                 salvar a otros y convertirse en un soldado del que su madre estaría orgullosa.
-                De vuelta en el distrito de Shiganshina, Floch Forster comienza los procedimientos de ejecución para 
-                Yelena y Onyankopon, y lee sus crímenes contra el Imperio Eldiano. Onyankopon intenta apelar a 
-                Jean Kirschtein para que lo comprenda, y Jean saca un arma, disparando cuatro veces. Resulta ser una 
-                señal y el Titán de la Carreta carga y escapa después de arrebatar a Jean y a los prisioneros en su boca. 
+                De vuelta en el distrito de Shiganshina, Floch Forster comienza los procedimientos de <b> ejecución para 
+                Yelena y Onyankopon,</b> y lee sus crímenes contra el Imperio Eldiano. Onyankopon intenta apelar a 
+                Jean Kirschtein para que lo comprenda, y Jean saca un arma, disparando cuatro veces. <b> Resulta ser una 
+                señal </b>y el Titán de la Carreta carga y escapa después de arrebatar a Jean y a los prisioneros en su boca. 
                 Al mismo tiempo, los soldados jaegeristas se distraen con el Titán de la Carreta, y Armin y su grupo 
                 escapan por el otro lado del fuerte, llevándose consigo carros de suministros.
             </p>
@@ -521,10 +473,10 @@
             <p class="titulo">Noche del fin</p>
             <p>La porción del Regimiento de Exploración aún liderada por Hange Zoë comparte una incómoda fogata con 
                 Theo Magath y los guerreros restantes. Ambos bandos desconfían el uno del otro debido a sus respectivas
-                historias y el escepticismo de Annie Leonhart de que los amigos de Eren Jaeger sean capaces de matarlo 
+                historias y el escepticismo de Annie Leonhart de que los amigos de Eren Jaeger <b> sean capaces de matarlo </b>
                 en caso de que falle la diplomacia. Yelena intenta avivar la división, pero en su mayoría fracasa hasta 
-                que menciona la muerte de Marco Bodt.
-                Reiner Braun asume la responsabilidad de eso, pero exagera sus sentimientos de culpa ante 
+                que menciona <b> la muerte de Marco Bodt.</b>
+                <b> Reiner Braun asume la responsabilidad de eso,</b> pero exagera sus sentimientos de culpa ante 
                 Jean Kirschtein, quien no quiere escuchar lo terrible que se siente Reiner al respecto. 
                 Jean comienza a golpear a Reiner, pero golpea accidentalmente a Gabi Braun cuando ella intenta proteger 
                 a su primo. Gabi comprende que Jean tiene buenas razones para odiar a los guerreros, pero le ruega que 
@@ -539,15 +491,15 @@
         <div class="descripcion">
             <p class="titulo">Traidor</p>
             <p>Las fuerzas combinadas de los Exploradores restantes de Hange Zoë y los Guerreros restantes de 
-                Theo Magath planean escapar de la Isla Paradis en el barco volador, que se encuentra en el puerto ocupado 
+                Theo Magath planean escapar de la Isla Paradis en<b>  el barco volador,</b> que se encuentra en el puerto ocupado 
                 por los Jaegeristas. Para lograr esto, necesitan evitar la destrucción del barco volador por parte de 
-                los Jaegeristas y rescatar a la familia Azumabito, los únicos capaces de dar servicio a la aeronave.
+                los Jaegeristas y <b> rescatar a la familia Azumabito,</b> los únicos capaces de dar servicio a la aeronave.
                 Armin Arlelt y Conny Springer intentan lograr esto a través de un engaño pacífico, fingiendo que 
-                necesitan el barco volador para perseguir a los Titanes Acorazado y Carta, pero cuando Floch Forster 
+                necesitan el barco volador para perseguir a los Titanes Acorazado y Carguero, pero cuando Floch Forster 
                 decide que sería más seguro eliminar a los Azumabito, el grupo combinado se ve obligado a entrar en 
                 batalla. Los Azumabito son guiados al sótano por Mikasa Ackermann y otros, donde pueden ser protegidos 
-                mientras Annie Leonhart y Reiner Braun utilizan sus Titanes para luchar contra los Jaegeristas. 
-                En el muelle, Conny se ve obligado a matar a Daz y Samuel Linke-Jackson para salvar la vida de Armin 
+                mientras <b> Annie Leonhart y Reiner Braun</b> utilizan sus Titanes para luchar contra los Jaegeristas. 
+                En el muelle, <b> Conny se ve obligado a matar a Daz y Samuel Linke-Jackson</b> para salvar la vida de Armin 
                 y evitar la destrucción del barco volador.
             </p>
         </div>
@@ -562,11 +514,11 @@
                 hangar. Aunque Liberio se perderá debido al retraso, Odiha está lo suficientemente lejos como para llegar 
                 antes del Estruendo.
                 Las fuerzas combinadas de Hange Zoë y Magath logran repeler a los Jaegeristas el tiempo suficiente para 
-                que todos suban al barco, aunque se retrasan brevemente por el ataque de Falco Grice en su primera 
-                transformación como el Titán Mandíbula. Después de ver a todos a bordo, Magath ordena a Onyankopon que 
+                que todos suban al barco, aunque se retrasan brevemente por el ataque de <b> Falco Grice en su primera 
+                transformación como el Titán Mandíbula.</b> Después de ver a todos a bordo, Magath ordena a Onyankopon que 
                 zarpe mientras él se queda atrás. Junto con Keith Sadies, Magath aborda un crucero marleyano capturado 
-                capaz de alcanzar el barco Azumabito. Él y Keith intercambian palabras de mutuo respeto antes de hacer 
-                explotar la bodega del barco y hundir el crucero.
+                capaz de alcanzar el barco Azumabito. <b> Él y Keith intercambian palabras de mutuo respeto antes de hacer 
+                explotar la bodega del barco y hundir el crucero.</b>
             </p>
         </div>
         <div class="bloque">
@@ -577,15 +529,14 @@
             <p>Mikasa Ackermann recuerda el primer viaje del Cuerpo de Exploración a Marley, donde experimentaron 
                 momentos de alegría al descubrir el helado y conectar con los refugiados de la Guerra del Medio Oriente 
                 de Marley. Sin embargo, también hubo decepciones, ya que el Grupo de Protección de los Sujetos de Ymir no 
-                resultó ser el aliado que esperaban. Fue entonces cuando Eren Jaeger abandonó a los Exploradores y 
+                resultó ser el aliado que esperaban. Fue entonces cuando <b> Eren Jaeger abandonó a los Exploradores</b> y 
                 comenzó a actuar por su cuenta, diciéndoles que seguiría el plan de su hermano Zeke. Mikasa se pregunta 
                 si podrían haber tomado decisiones diferentes para que las cosas hubieran resultado de manera distinta.
                 Mientras tanto, Eren recuerda los eventos que lo llevaron hasta aquí: cómo conoció a Yelena y se enteró 
-                del plan de eutanasia de Zeke, cómo confió en Floch Forster que solo pretendía seguir el plan de Zeke 
-                mientras en realidad usaría el Estruendo para acabar con el resto del mundo, y cómo intentó sin éxito 
+                del plan de eutanasia de Zeke, cómo confió en Floch Forster que <b> solo pretendía seguir el plan de Zeke</b>
+                mientras en realidad <b> usaría el Estruendo para acabar con el resto del mundo,</b> y cómo intentó sin éxito 
                 persuadir a Historia Reiss de luchar o huir antes de que la Policía Militar la convirtiera en un Titán 
-                para devorar a Zeke. Una flota de barcos intenta detener el ejército de Titanes de Eren, pero falla, y 
-                finalmente sus Titanes llegan a las costas de Marley.
+                para devorar a Zeke.
             </p>
         </div>
         <div class="bloque">
@@ -593,7 +544,7 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Los capítulos finales (Parte 1)</p>
-            <p>Ramzi y Halil, dos niños refugiados, escapan de los Titanes Colosales mientras estos rodean las 
+            <p>Ramzi y Halil, dos niños refugiados, <b> escapan de los Titanes Colosales</b> mientras estos rodean las 
                 multitudes de refugiados en Marley. Un año atras, Eren reflexiona sobre sus experiencias pasadas, 
                 y sus acciones futuras.
             </p>
@@ -603,8 +554,8 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Los capítulos finales (Parte 2)</p>
-            <p>Eren aplasta el mundo exterior, la Alianza llega a Fort Salta para detenerlo. Eren busca salvar a sus 
-                amigos y su gente, enfrentando una batalla mortal. Mikasa, Armin y sus aliados desafían a monstruos 
+            <p><b> Eren aplasta el mundo exterior,</b> la Alianza llega a Fort Salta para detenerlo. Eren busca salvar a sus 
+                amigos y su gente,<b>  enfrentando una batalla mortal.</b> Mikasa, Armin y sus aliados desafían a monstruos 
                 temibles.
             </p>
         </div>
@@ -613,6 +564,9 @@
         
       
     </article>
+
+    <a class="irarriba" href="#"><i class="fa fa-arrow-up"></i></a>
+
     <footer>
   
        

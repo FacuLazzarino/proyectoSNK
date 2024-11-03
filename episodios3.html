@@ -6,52 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <title>Proyecto SNK</title>
+    <link href="CSS/lightbox.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js">  </script>
+    <title>SNK:  Guía cautelosa</title>
 </head>
 <body>
     <header>
-                            
-            
+                        
+        
         <div>
             <a href="index.html">
-                <img src="Imagenes/logo.png" alt="logo shingeki">
+                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
             </a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menubarra" class="barratop">
             <ul>
-                <li>Personajes
-                   <ul>
-                       <li><a href="personajes1.html">Temporada 1</a></li>
-                       <li><a href="personajes2.html">Temporada 2</a></li>
-                       <li><a href="personajes3.html">Temporada 3</a></li>
-                       <li><a href="personajes4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
-              
-               <li>Episodios
-                   <ul>
-                       <li><a href="episodios1.html">Temporada 1</a></li>
-                       <li><a href="episodios2.html">Temporada 2</a></li>
-                       <li><a href="episodios3.html">Temporada 3</a></li>
-                       <li><a href="episodios4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
+                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                    <ul id="sub1" class="per">
+                        <li><a href="personajes1.html">Temporada 1</a></li>
+                        <li><a href="personajes2.html">Temporada 2</a></li>
+                        <li><a href="personajes3.html">Temporada 3</a></li>
+                        <li><a href="personajes4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
                
-               <li><a href="Otros contenidos.html">Extras</a></li>
-               <li><a href="contacto.html">Contacto</a></li>
-               <li><a href="#">Galeria</a></li>
-               
-               
-           </ul>
-       
+                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                    <ul id="sub2" class="epi">
+                        <li><a href="episodios1.html">Temporada 1</a></li>
+                        <li><a href="episodios2.html">Temporada 2</a></li>
+                        <li><a href="episodios3.html">Temporada 3</a></li>
+                        <li><a href="episodios4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Otros contenidos.html">Extras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Galería.html">Galería</a></li>
+                
+                
+            </ul>
         
        
         </nav>
-    
-    </header>
+
+    </header> 
     <h1>EPISODIOS DE LA TEMPORADA 3</h1>
     <article>
         <div class="bloque">
@@ -60,10 +64,10 @@
         <div class="descripcion">
             <p class="titulo">Señal de humo</p>
             <p>Después de haber pasado algún tiempo ocultos en medio de un bosque en las montañas, los miembros 
-                del Cuerpo de Exploración se enteran de que sus enemigos en el interior de las murallas han iniciado 
-                su jugada y que también se encuentran tras Eren e Historia. Para asegurar la protección de ambos y 
-                mantenerse ocultos de la Policía Militar Central, el capitán Levi y su nuevo escuadrón viajan al 
-                Distrito Trost. Al separarse de su equipo, Levi es emboscado por un viejo conocido.
+                del<b>  Cuerpo de Exploración</b> se enteran de que sus enemigos en el interior de las murallas han iniciado 
+                su jugada y que también se encuentran tras<b>  Eren e Historia.</b> Para asegurar la protección de ambos y 
+                mantenerse ocultos de la Policía Militar Central,<b>  el capitán Levi y su nuevo escuadrón</b> viajan al 
+                Distrito Trost. Al separarse de su equipo, <b> Levi es emboscado por un viejo conocido.</b>
             </p>
         </div>
         <div class="bloque">
@@ -71,14 +75,14 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Dolor</p>
-            <p>Tras recibir la visita inesperada de Kenny y perder a los miembros del escuadrón Hange, Levi no 
+            <p>Tras recibir la visita inesperada de<b>  Kenny</b> y perder a los miembros del escuadrón Hange, Levi</b> no 
                 tiene más remedio que huir del lugar mientras sus enemigos lo persiguen por los tejados de Trost. 
                 Mikasa y sus compañeros toman el carruaje en donde se encuentran Eren e Historia, Levi se reagrupa 
-                con ellos y se disponen a llevarlos a un sitio seguro, pero se ven forzados a dejar que el enemigo los 
-                secuestre cuando se ven superados en número. Levi convence a Dimo Reeves de unirse al Cuerpo de 
-                Exploración y junto a Hange, descubre que los Reiss son la verdadera familia real tras haber torturado 
-                al hombre que mató a Nick. Kenny mata a Dimo y en ese mismo instante, Rod Reiss se 
-                reencuentra con su hija Historia.
+                con ellos y se disponen a llevarlos a un sitio seguro, pero <b> se ven forzados a dejar que el enemigo los 
+                secuestre cuando se ven superados en número.</b> Levi convence a <b> Dimo Reeves</b> de unirse al Cuerpo de 
+                Exploración y junto a Hange, descubre que <b> los Reiss son la verdadera familia real</b> tras haber torturado 
+                al hombre que mató a Nick. Kenny mata a Dimo y en ese mismo instante,<b>  Rod Reiss se 
+                reencuentra con su hija Historia.</b>
             </p>
         </div>
         <div class="bloque">
@@ -90,7 +94,7 @@
                 hija de una madre que la aborrecía y de un padre que intentó deshacerse de ella, pero que decidió 
                 perdonarle la vida si no volvía a cruzarse en su camino. Al reunirse con el comandante Pixis de las 
                 Tropas de Guarnición, Erwin le revela su plan de destronar al actual rey y sustituirlo por la legítima 
-                heredera al trono, Historia.
+                heredera al trono,<b>  Historia.</b>
             </p>
         </div>
         <div class="bloque">
@@ -99,10 +103,10 @@
         <div class="descripcion">
             <p class="titulo">Confianza</p>
             <p>Levi y su escuadrón continúan tras la pista de Eren e Historia y tras un inesperado encuentro con 
-                los agentes de Policía Marlowe y Hitch, consiguen la ayuda de estos. Hange y Moblit en colaboración 
+                los agentes de Policía<b>  Marlowe y Hitch,</b> consiguen la ayuda de estos. Hange y Moblit en colaboración 
                 con Flegel, consiguen desenmascarar a la Policía Militar Central como los verdaderos responsables de 
-                la muerte de Dimo. Mientras tanto en la capital, Erwin es llevado a la corte real, en donde se decidirá 
-                si es inocente de todo cargo en su contra o si por el contrario, será condenado a muerte.
+                <b> la muerte de Dimo.</b> Mientras tanto en la capital, Erwin es llevado a la corte real, en donde se decidirá 
+                si es inocente de todo cargo en su contra o si por el contrario,<b>  será condenado a muerte.</b>
             </p>
         </div>
         <div class="bloque">
@@ -113,7 +117,7 @@
             <p>Con el fin de salvarse a sí mismo y al Cuerpo de Exploración, Erwin lleva a cabo un plan con ayuda de 
                 los superiores del ejército durante su juicio en la sala del trono, el cual resulta exitoso y saca a 
                 la luz las intenciones de la falsa monarquía. Levi en compañía de Hange y su escuadrón, se dirigen al 
-                escondite de Rod Reiss para rescatar a Eren antes de que sea devorado.
+                escondite de Rod Reiss para rescatar a Eren <b> antes de que sea devorado.</b>
             </p>
         </div>
         <div class="bloque">
@@ -122,10 +126,10 @@
         <div class="descripcion">
             <p class="titulo">Pecado</p>
             <p>Por medio de una extraña reacción al ser tocado por Rod e Historia, Eren accede a sus recuerdos reprimidos 
-                y es ahí cuando descubre algo aterrador: él fue quien acabó con la vida de su padre al haberlo devorado
-                tras ser convertido en titán el mismo día en el que cayó la Muralla María. 
-                Rod relata que ese mismo día, Grisha había encontrado a la Familia Reiss con el objetivo de robar 
-                el poder que se encontraba en posesión de su hija mayor Frieda, el cual logró obtener tras una breve
+                y es ahí cuando descubre algo aterrador:<b>  él fue quien acabó con la vida de su padre al haberlo devorado
+                tras ser convertido en titán el mismo día en el que cayó la Muralla María.</b> 
+                Rod relata que ese mismo día, <b> Grisha había encontrado a la Familia Reiss con el objetivo de robar 
+                el poder</b> que se encontraba en posesión de su hija mayor Frieda, el cual logró obtener tras una breve
                 batalla. A las afueras de la capilla Reiss, el escuadrón de Levi se prepara para entrar al lugar y 
                 rescatar a Eren.
             </p>
@@ -137,7 +141,7 @@
             <p class="titulo">Deseo</p>
             <p>El Escuadrón de Levi inicia su última jugada para salvar a Eren antes de que pueda ser devorado, 
                 Rod prepara a Historia para que sea ella quien recupere el poder que Grisha le robó a la Familia Reiss 
-                en el pasado y esta al recordar la promesa que le hizo a Ymir, decide confrontar a su padre y ayudar a 
+                en el pasado y esta <b> al recordar la promesa que le hizo a Ymir, decide confrontar a su padre </b>y ayudar a 
                 su compañero en aprietos.
             </p>
         </div>
@@ -146,9 +150,9 @@
         </div>
         <div class="descripcion">
             <p class="titulo">A las afueras de las paredes del Distrito Orvud</p>
-            <p>Rod lentamente se convierte en un descomunal titán que supera en tamaño a cualquiera que haya sido visto 
-                antes, tras ser liberado por sus compañeros de escuadron, Eren bebe un extraño líquido que le da el poder 
-                de endurecer su cuerpo, habilidad con la que logra salvarse a sí mismo y a sus camaradas. Una vez que se 
+            <p>Rod lentamente se convierte en <b> un descomunal titán</b> que supera en tamaño a cualquiera que haya sido visto 
+                antes, tras ser liberado por sus compañeros de escuadron, <b> Eren bebe un extraño líquido que le da el poder 
+                de endurecer su cuerpo,</b> habilidad con la que logra salvarse a sí mismo y a sus camaradas. Una vez que se 
                 marchan de las ruinas de la capilla, el Cuerpo de Exploración toma la decisión de matar a Rod al darse 
                 cuenta de que ya no podrá ser humano de nuevo.
             </p>
@@ -158,13 +162,13 @@
         </div>
         <div class="descripcion">
             <p class="titulo">La reina de la muralla</p>
-            <p>Tras la transformación de Rod Reiss en un titán de 120 metros, el Cuerpo de Exploración se ha desplazado 
+            <p>Tras la transformación de Rod Reiss en <b> un titán de 120 metros,</b> el Cuerpo de Exploración se ha desplazado 
                 al Distrito Orvud para combatir contra él y evitar que resulte una amenaza para la humanidad.
                 Ante el desempeño de las Tropas de Guarnición, los miembros del Cuerpo de Exploración llevan a 
-                cabo una delicada maniobra para derrotar a Rod Reiss. El plan funciona y son capaces de hacer explotar 
-                el cuerpo del titán con barriles llenos de pólvora. Historia mata a su padre cortando el punto vital del 
+                cabo una delicada maniobra para derrotar a Rod Reiss. El plan funciona y<b>  son capaces de hacer explotar 
+                el cuerpo del titán</b> con barriles llenos de pólvora. <b> Historia mata a su padre</b> cortando el punto vital del 
                 titán, que había salido volando por los aires. Los ciudadanos son testigos de esto e Historia se 
-                resenta como la auténtica reina de las murallas. Kenny Ackerman, malherido después de desplomarse el 
+                resenta como la auténtica reina de las murallas.<b>  Kenny Ackerman,</b> malherido después de desplomarse el 
                 sótano de la Capilla de los Reiss, se tambalea hasta su lecho de muerte, donde se encuentra con Levi.
             </p>
         </div>
@@ -173,11 +177,11 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Amigos</p>
-            <p>A pocos minutos de su muerte, Kenny Ackerman recuerda parte de su pasado y sus motivaciones personales, 
+            <p>A pocos minutos de su muerte,<b>  Kenny Ackerman</b> recuerda parte de su pasado y sus motivaciones personales, 
                 así como el tiempo que pasó cuidando a Levi hasta el dia que decidió abandonarlo en la 
                 Ciudad Subterránea. El capitán del Cuerpo de Exploraciónencuentra a Kenny en agonía y allí se 
-                entera de que el infame ex-asesino en serie es en realidad el hermano mayor de su difunta madre. 
-                En la ciudad real de Mitras, Historia es nombrada como la nueva reina de las murallas, dando fin a 
+                entera de que el infame ex-asesino en serie es en realidad <b> el hermano mayor de su difunta madre.</b> 
+                En la ciudad real de Mitras, <b> Historia es nombrada como la nueva reina</b> de las murallas, dando fin a 
                 años de tiranía.
             </p>
         </div>
@@ -186,10 +190,10 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Espectador</p>
-            <p>Muchas cosas empezaron a cambiar dentro de las murallas tras la proclamación de Historia como la nueva 
-                reina, el Cuerpo de Exploración ha diseñado una nueva arma para vencer a los titanes y la moral entre 
+            <p>Muchas cosas empezaron a cambiar dentro de las murallas tras la proclamación de<b> Historia como la nueva 
+                reina,</b> el Cuerpo de Exploración ha diseñado <b> una nueva arma</b> para vencer a los titanes y la moral entre 
                 los militares es más alta que nunca. Eren todavía necesita saber más cosas sobre sus poderes y sus 
-                enemigos antes de regresar a su antiguo hogar y al ver al instructor de reclutas Shadis en los recuerdos 
+                enemigos antes de regresar a su antiguo hogar y al ver al instructor de reclutas<b>  Shadis</b> en los recuerdos 
                 de su padre, decide ir a buscarlo, pues cree que este posee la información que necesita.
             </p>
         </div>
@@ -198,13 +202,13 @@
         </div>
         <div class="descripcion">
             <p class="titulo">La Noche de la operación para retomar el muro</p>
-            <p>Las preparaciones para la operación de la retoma de la Muralla María están casi listas y entre los altos 
+            <p>Las preparaciones para la operación de <b> la retoma de la Muralla María</b> están casi listas y entre los altos 
                 mandos del ejército, discuten que deben hacer con el suero de titán que Levi recibió de Kenny poco antes 
                 de su muerte. La noche antes de la partida, el Cuerpo de Exploración decide relajarse un poco mientras 
                 comen juntos y se divierten; al acabar la cena, Eren y sus compañeros recuerdan el pasado mientras 
-                Armin habla sobre aquel viejo sueño de ver el mar y las demás cosas que existen en el mundo exterior, 
-                sueño que en ese mismo instante se convierte en promesa. Al amanecer, los exploradores son alentados 
-                por los civiles de Trost y en ese mismo instante parten hacia el Distrito Shiganshina, en donde sus 
+                <b> Armin habla sobre aquel viejo sueño de ver el mar</b> y las demás cosas que existen en el mundo exterior, 
+                sueño que en ese mismo instante <b> se convierte en promesa.</b> Al amanecer, los exploradores son alentados 
+                por los civiles de Trost y en ese mismo instante parten hacia<b>  el Distrito Shiganshina,</b> en donde sus 
                 enemigos se encuentran esperándolos.
             </p>
         </div>
@@ -214,10 +218,10 @@
         <div class="descripcion">
             <p class="titulo">La ciudad donde todo empezó</p>
             <p>Tras partir del distrito Trost y luego de un largo viaje, el Cuerpo de Exploración consigue llegar a 
-                las ruinas del distrito Shiganshina, el pueblo natal de Eren, Armin y Mikasa. Una vez allí, Erwin 
+                las ruinas del <b> distrito Shiganshina, el pueblo natal de Eren, Armin y Mikasa.</b> Una vez allí, Erwin 
                 ordena dar inicio al plan de recuperación de la muralla María; sin embargo, las cosas se complican
-                con las repentinas apariciones de Reiner Braun y el Titán Bestia, es ahí cuando Shiganshina se convierte 
-                en el campo de la batalla que determinará el destino de la humanidad.
+                con las repentinas apariciones de <b> Reiner Braun y el Titán Bestia,</b> es ahí cuando <b> Shiganshina se convierte 
+                en el campo de la batalla que determinará el destino de la humanidad.</b>
             </p>
         </div>
         <div class="bloque">
@@ -225,11 +229,11 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Lanza Relámpago</p>
-            <p>La operación de reconquista de la muralla María se ve interrumpida tras aparición de los titanes Acorazado 
-                y Bestia; por órdenes de Erwin, Eren desciende al interior de Shiganshina y se transforma en titán para 
-                combatir a su némesis Reiner, con quien usa sus recién adquiridos poderes de endurecimiento para así 
+            <p>La operación de reconquista de la muralla María se ve interrumpida tras aparición de <b> los titanes Acorazado 
+                y Bestia;</b> por órdenes de Erwin, Eren desciende al interior de Shiganshina y <b> se transforma en titán para 
+                combatir a su némesis Reiner,</b> con quien usa sus recién adquiridos poderes de endurecimiento para así 
                 poder romper la gruesa coraza que lo protege. Tras unos instantes, el Acorazado queda a merced de las 
-                tropas del Cuerpo de Exploración, quienes usan en él una nueva arma que supone ser una 
+                tropas del Cuerpo de Exploración, quienes usan en él<b>  una nueva arma</b> que supone ser una 
                 gran ventaja sobre este enemigo.
             </p>
         </div>
@@ -238,12 +242,12 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Descenso</p>
-            <p>El Cuerpo de Exploración consigue superar al Titán Acorazado gracias a las lanzas relámpago, 
-                logrando así acorralar a dicho oponente. Sin embargo, Reiner aun vivo utiliza su último recurso y lanza 
-                un rugido de auxilio, haciendo que el Titán Bestia arroje a Bertolt dentro de un barril hacia el 
+            <p>El Cuerpo de Exploración consigue superar al Titán Acorazado gracias a las <b> lanzas relámpago,</b> 
+                logrando así acorralar a dicho oponente. Sin embargo, Reiner aun vivo <b> utiliza su último recurso y lanza 
+                un rugido de auxilio,</b> haciendo que el Titán Bestia arroje a Bertolt dentro de un barril hacia el 
                 interior de Shiganshina. Tras encontrar a su moribundo compañero y escapar de las tropas enemigas, 
-                Bertolt provoca grandes daños en la ciudad al transformarse en el Titán Colosal, generando una gran 
-                explosión a la que aparentemente solo sobrevivieron Eren y sus compañeros.
+                Bertolt provoca grandes daños en la ciudad al transformarse en el Titán Colosal,<b>  generando una gran 
+                explosión</b> a la que aparentemente solo sobrevivieron Eren y sus compañeros.
             </p>
         </div>
         <div class="bloque">
@@ -253,10 +257,10 @@
             <p class="titulo">Juego perfecto</p>
             <p>El Cuerpo de Exploración se encuentra siendo atacado en dos frentes, dentro del Distrito Shiganshina, 
                 Jean comanda al Escuadrón de Levi para intentar detener al Titán Colosal con la ayuda de Eren y las 
-                lanzas relámpago, el plan falla y Eren es pateado por el Titán Colosal, mientras que al otro lado de 
+                <b> lanzas relámpago,</b> el plan falla y Eren es pateado por el Titán Colosal, mientras que al otro lado de 
                 la muralla, los soldados son masacrados por el bombardeo de rocas del Titán Bestia, dejando a pocos 
-                sobrevivientes. Al darse cuenta que van a morir sin importar lo que hagan, Erwin lo apuesta todo en un 
-                ataque final, una operación suicida donde él y el resto de soldados serán usados como cebo para
+                sobrevivientes. Al darse cuenta que van a morir sin importar lo que hagan,<b>  Erwin lo apuesta todo en un 
+                ataque final, una operación suicida</b> donde él y el resto de soldados serán usados como cebo para
                 distraer al Titán Bestia, para que, de esa forma Levi pueda acercarse por sorpresa y atacarlo.
             </p>
         </div>
@@ -265,12 +269,12 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Héroe</p>
-            <p>Zeke extermina al resto de los reclutas que fueron usados como distracción, mientras que Levi 
-                logra acercarse por sorpresa y vencerlo, pero sus planes de usar el suero de titán son frustrados por 
-                el Titán Cuadrúpedo que interviene y salva a Zeke. Levi promete que lo asesinará. Al otro lado de la 
+            <p><b> Zeke extermina al resto de los reclutas</b> que fueron usados como distracción, mientras que <b> Levi 
+                logra acercarse por sorpresa y vencerlo,</b> pero sus planes de usar el suero de titán son frustrados por 
+                <b> el Titán Cuadrúpedo que interviene y salva a Zeke.</b> Levi promete que lo asesinará. Al otro lado de la 
                 muralla, Armin tiene un plan para derrotar junto a Eren al Titán Colosal, el resto del escuadrón, con 
-                a ayuda de Hange logran vencer al Titán Acorazado, mientras que el plan de Armin funciona, logrando 
-                distraer a Bertolt a costa de ser quemado vivo para que Eren pueda acercarse sin ser visto y emboscar 
+                a ayuda de Hange <b> logran vencer al Titán Acorazado,</b> mientras que el plan de Armin funciona,<b>  logrando 
+                distraer a Bertolt a costa de ser quemado vivo</b> para que Eren pueda acercarse sin ser visto y emboscar 
                 a Bertolt, atacando su punto débil y sacándolo de su cuerpo de titán, poniendo así fin a la batalla.
             </p>
         </div>
@@ -279,15 +283,15 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Sol de medianoche</p>
-            <p>Eren llora al ver el cuerpo de su amigo Armin, Zeke se encuentra con Eren, al verlo se da cuenta que
+            <p><b> Eren llora al ver el cuerpo de su amigo Armin,</b> Zeke se encuentra con Eren, al verlo se da cuenta que
                 Zeke se parece a su padre, Grisha. Levi llega al lugar, haciendo que Zeke huya, mientras que Armin da 
                 señales de vida, por lo que Eren pide a Levi que le entregue el suero de titán para salvarlo haciendo 
-                que devore a Bertolt, pero ello se interrumpe al llegar Floch cargando a un agonizante Erwin y pidiendo 
+                que devore a Bertolt, pero ello se interrumpe al llegar <b> Floch cargando a un agonizante Erwin</b> y pidiendo 
                 que se use la inyección en el comandante. Zeke y aquel Titán Cuadrúpedo salvan a Reiner. Hange y el resto 
-                del escuadrón de Levi llegan al lugar y detienen la pelea entre Mikasa y Levi por la inyección, 
+                del escuadrón de Levi llegan al lugar y detienen la<b>  pelea entre Mikasa y Levi</b> por la inyección, 
                 Levi decide usarla en Erwin, pero al último momento cambia de opinión y decide dejar descansar en paz 
-                a Erwin, haciendo que Armin se convierta en un titán puro y sea el heredero 
-                de los poderes del Titán Colosal.
+                a Erwin, <b> haciendo que Armin se convierta en un titán puro y sea el heredero 
+                de los poderes del Titán Colosal.</b>
             </p>
         </div>
         <div class="bloque">
@@ -295,10 +299,10 @@
         </div>
         <div class="descripcion">
             <p class="titulo">El sótano</p>
-            <p>Armin despierta y se percata de que ha sido elegido, en lugar de Erwin, para ser el nuevo sucesor del 
-                Titán Colosal. Eren y la mitad del grupo se dirigen hacia el sótano en la casa de su familia, donde 
-                descubren tres libros y una fotografía. En los libros se describe la vida de Grisha Jaeger, donde existen 
-                humanos más allá de las murallas y poseen tecnología más avanzada. Un pequeño Grisha se embarca en una 
+            <p>Armin despierta y se percata de que ha sido elegido, en lugar de Erwin, para ser <b> el nuevo sucesor del 
+                Titán Colosal.</b> Eren y la mitad del grupo se dirigen hacia el sótano en la casa de su familia,</b> donde 
+                descubren tres libros y una fotografía. En los libros se describe la vida de <b> Grisha Jaeger, donde existen 
+                humanos más allá de las murallas y poseen tecnología más avanzada.</b> Un pequeño Grisha se embarca en una 
                 breve aventura, junto a su hermana menor Faye.
             </p>
         </div>
@@ -309,14 +313,14 @@
             <p class="titulo">Ese día</p>
             <p>Grisha y Faye salen de Liberio para ver el dirigible, al hacerlo se encuentran con Kruger y Gross, 
                 quienes los castigan por salir de su zona de internamiento sin permiso. Al llegar a casa, Grisha se 
-                entera de la muerte de su hermana, mientras su padre acepta la explicación dada por las Autoridades de 
+                entera de <b> la muerte de su hermana,</b> mientras su padre acepta la explicación dada por las Autoridades de 
                 Seguridad Pública de Marley, además cuenta a Grisha la historia de su pueblo y dice que mantenga un 
-                perfil bajo. Como adulto, Grisha se une a los Restauradores de Eldia luego de conocerla verdad sobre 
-                el asesinato de su hermana, donde también conoce a su futura esposa Dina Fritz, con quien tiene un hijo 
-                llamado Zeke. Su plan es infiltrarlo como un guerrero en la misión de Marley de recuperar 
-                el Titán Fundador, plan que fracasa por la traición de Zeke, posteriormente son 
-                llevados a la isla Paradis para ser convertidos en titanes. Grisha es salvado por Kruger, 
-                quién le revela ser el búho, lider secreto de los Restauradores de Eldia y un Titán Cambiante.
+                perfil bajo. Como adulto, Grisha se une a los<b>  Restauradores de Eldia</b> luego de conocerla verdad sobre 
+                el asesinato de su hermana, donde también conoce a su futura esposa<b>  Dina Fritz,</b> con quien tiene <b> un hijo 
+                llamado Zeke.</b> Su plan es infiltrarlo como un guerrero en la misión de Marley de recuperar 
+                el Titán Fundador, plan que fracasa por <b> la traición de Zeke,</b> posteriormente son 
+                llevados a la <b> isla Paradis</b> para ser convertidos en titanes. Grisha es salvado por <b> Kruger,</b> 
+                quién le revela ser el búho, lider secreto de los Restauradores de Eldia y un <b> Titán Cambiante.</b>
             </p>
         </div>
         <div class="bloque">
@@ -324,9 +328,9 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Titán de Ataque</p>
-            <p>MGrisha se siente culpable por la pérdida de su familia y el fracaso de su misión. 
-                Eren Kruger lo convence de continuar la misión y robar el Titán Fundador al rey dentro de las murallas 
-                y así salvar a los eldianos. Para hacerlo, Kruger deberá hacer que Grisha herede su poder de titán, 
+            <p>Grisha se siente culpable por la pérdida de su familia y el fracaso de su misión. 
+                Eren Kruger lo convence de continuar la misión y <b> robar el Titán Fundador</b> al rey dentro de las murallas 
+                y así salvar a los eldianos. Para hacerlo, Kruger deberá hacer que<b>  Grisha herede su poder de titán,</b> 
                 el llamado Titán de Ataque. Eren y Mikasa son liberados de sus celdas para asistir a una 
                 audiencia militar, donde se hablará de los descubrimientos encontrados en los libros de Grisha y 
                 los recuerdos que experimentó el propio Eren.
@@ -337,13 +341,13 @@
         </div>
         <div class="descripcion">
             <p class="titulo">El otro lado de la muralla</p>
-            <p>MEl Gobierno Real decide informar al público sobre la información encontrada en los libros de Grisha. 
+            <p>El Gobierno Real decide informar al público sobre la información encontrada en los libros de Grisha. 
                 Hange inventa una arma efectiva para eliminar titanes sin que los soldados sufran bajas, la denomina el 
-                Verdugo Infernal, haciendo que los habitantes de las murallas pueda poblar nuevamente la muralla María. 
+                Verdugo Infernal, haciendo que los habitantes de las murallas<b>  pueda poblar nuevamente la muralla María.</b> 
                 Seis años después de la caída de la muralla María, el Cuerpo de Exploración es capaz de iniciar una nueva
-                exploración en territorio desconocido, llegando esta vez hasta el océano, lugar donde todos se encuentran 
-                emocionados a excepción de Eren, quién, gracias a los recuerdos de su padre, sabe que hay enemigos 
-                esperándolos al otro lado del mar.
+                exploración en territorio desconocido, <b> llegando esta vez hasta el océano,</b> lugar donde todos se encuentran 
+                emocionados a excepción de Eren, quién, gracias a los recuerdos de su padre, <b> sabe que hay enemigos 
+                esperándolos al otro lado del mar.</b>
             </p>
         </div>
        
@@ -351,6 +355,9 @@
         
       
     </article>
+
+    <a class="irarriba" href="#"><i class="fa fa-arrow-up"></i></a>
+
     <footer>
   
        

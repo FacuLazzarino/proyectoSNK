@@ -6,52 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <title>Proyecto SNK</title>
+    <link href="CSS/lightbox.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js">  </script>
+    <title>SNK:  Guía cautelosa</title>
 </head>
 <body>
     <header>
-                            
-            
+                        
+        
         <div>
             <a href="index.html">
-                <img src="Imagenes/logo.png" alt="logo shingeki">
+                <img id="inicio" src="Imagenes/logo.png" alt="logo shingeki">
             </a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menubarra" class="barratop">
             <ul>
-                <li>Personajes
-                   <ul>
-                       <li><a href="personajes1.html">Temporada 1</a></li>
-                       <li><a href="personajes2.html">Temporada 2</a></li>
-                       <li><a href="personajes3.html">Temporada 3</a></li>
-                       <li><a href="personajes4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
-              
-               <li>Episodios
-                   <ul>
-                       <li><a href="episodios1.html">Temporada 1</a></li>
-                       <li><a href="episodios2.html">Temporada 2</a></li>
-                       <li><a href="episodios3.html">Temporada 3</a></li>
-                       <li><a href="episodios4.html">Temporada 4</a></li>
-                   </ul>
-               </li>
+                <a href="javascript:void(0);" onclick="personajes()"><li>Personajes</a>
+                    <ul id="sub1" class="per">
+                        <li><a href="personajes1.html">Temporada 1</a></li>
+                        <li><a href="personajes2.html">Temporada 2</a></li>
+                        <li><a href="personajes3.html">Temporada 3</a></li>
+                        <li><a href="personajes4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
                
-               <li><a href="Otros contenidos.html">Extras</a></li>
-               <li><a href="contacto.html">Contacto</a></li>
-               <li><a href="#">Galeria</a></li>
-               
-               
-           </ul>
-       
+                <a href="javascript:void(0);" onclick="episodios()"><li>Episodios</a>
+                    <ul id="sub2" class="epi">
+                        <li><a href="episodios1.html">Temporada 1</a></li>
+                        <li><a href="episodios2.html">Temporada 2</a></li>
+                        <li><a href="episodios3.html">Temporada 3</a></li>
+                        <li><a href="episodios4.html">Temporada 4</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Otros contenidos.html">Extras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Galería.html">Galería</a></li>
+                
+                
+            </ul>
         
        
         </nav>
-    
-    </header>
+
+    </header> 
     <h1>EPISODIOS DE LA TEMPORADA 2</h1>
     <article>
         <div class="bloque">
@@ -59,15 +63,15 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Titán Bestia</p>
-            <p>Mientras Annie es llevada bajo custodia, Hange y su equipo descubren un titán sellado 
-                dentro de las paredes y el pastor Nick del Culto de las Murallas aparece instándolos a 
-                cubrirlo de la luz del sol. Erwin es informado de que la Muralla Rose fue abierta y los 
+            <p>Mientras <b> Annie</b> es llevada bajo custodia, Hange y su equipo <b> descubren un titán sellado 
+                dentro de las paredes</b> y el pastor Nick del Culto de las Murallas aparece instándolos a 
+                cubrirlo de la luz del sol. Erwin es informado de que la Muralla Rose fue abierta</b> y los 
                 titanes están vagando por dentro. 12 horas antes, el resto de los reclutas de la tropa 104 
                 están estacionados en un puesto avanzado cuando los titanes son vistos avanzando desde el sur. 
-                Todos los soldados son enviados por Mike Zacharius para informar y evacuar a los pueblos cercanos. 
+                Todos los soldados son enviados por <b> Mike Zacharius</b> para informar y evacuar a los pueblos cercanos. 
                 Después de que Mike consigue suficiente tiempo, se prepara para escapar también, pero es capturado 
-                por un misterioso titán cubierto de pelo que es capaz de hablar. No obteniendo ninguna información 
-                de Mike, el Titán Bestia le quita su equipo y lo deja ser devorado por los otros titanes.
+                por un <b> misterioso titán cubierto de pelo que es capaz de hablar.</b> No obteniendo ninguna información 
+                de Mike, el <b> Titán Bestia</b> le quita su equipo y lo deja ser devorado por los otros titanes.
             </p>
         </div>
         <div class="bloque">
@@ -77,10 +81,10 @@
             <p class="titulo">Estoy en casa</p>
             <p>El Cuerpo de Exploración parte a investigar la supuesta brecha en la muralla Rose. Hange lleva al 
                 pastor Nick junto a ellos para que pueda ver la realidad que sufre los civiles ante la terrible 
-                perspectiva de haber perdido el muro Rose. En su pueblo natal, Sasha enfrenta valientemente a un 
+                perspectiva de haber perdido el muro Rose. En su pueblo natal, <b> Sasha</b> enfrenta valientemente a un 
                 titán para salvar la vida de una niña. Tras reencontrarse con su padre, Sasha agradece haber podido 
-                regresar a su hogar. Mientras tanto, Connie descubre su pueblo natal en ruinas, y extrañamente, 
-                n titán sobre el lugar que solía ser su hogar.
+                regresar a su hogar. Mientras tanto, <b> Connie</b> descubre su pueblo natal en ruinas, y extrañamente, 
+                un titán sobre el lugar que solía ser su hogar.
             </p>
         </div>
         <div class="bloque">
@@ -88,14 +92,14 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Hacia el Suroeste</p>
-            <p>Connie se aflige por la muerte de su familia y la destrucción de su pueblo, pero antes de partir, 
+            <p><b> Connie</b> se aflige por la muerte de su familia y la destrucción de su pueblo, pero antes de partir, 
                 escucha al titán que se encuentra sobre su hogar darle la bienvenida. Connie parte junto a los 
                 demás a buscar la brecha en el muro Rose luego de que Reiner sacara esos pensamientos de su mente. 
-                Tras explorar la muralla, los grupos de Nanaba y Gelgar no encuentran brecha alguna, y se disponen 
+                Tras explorar la muralla, los grupos de Nanaba y Gelgar <b> no encuentran brecha alguna,</b> y se disponen 
                 a descansar en un castillo abandonado. Aún después de ver la cruel realidad que enfrentan los 
                 residentes de la muralla Rose, el pastor Nick se niega a revelar los secretos de las murallas, 
-                pero si da el nombre de alguien que puede hacerlo: Krista Lenz. En el castillo Utgard, los titanes 
-                han empezado a moverse junto al misterioso Titán Bestia, y los veteranos se preparan para hacer frente 
+                pero si da el nombre de alguien que puede hacerlo: <b> Krista Lenz.</b> En el castillo Utgard, los titanes 
+                han empezado a moverse junto al misterioso <b> Titán Bestia,</b> y los veteranos se preparan para hacer frente 
                 a la amenaza.
             </p>
         </div>
@@ -104,12 +108,12 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Soldado</p>
-            <p>Año 845, la aparición de un Titán Colosal provocó el avance de los titanes regulares
+            <p>
                 Los grupos de Nanaba y Gelgar se refugian en el castillo Utgard y hablan sobre los hechos ocurridos 
                 durante el día. Mientras eso ocurre una oleada de titanes los acorrala. Los veteranos luchan contra 
                 los titanes, mientras los reclutas se atrincheran en el interior. la superioridad numérica de los 
-                titanes logra sobrepasar a los miembros de el Cuerpo y finalmente caen. Ante la desesperada situación, 
-                mir decida actuar, lanzándose contra los titanes y revelando su secreto: puede transformarse en titán.
+                titanes logra sobrepasar a los miembros de el Cuerpo y <b> finalmente caen.</b> Ante la desesperada situación, 
+                <b> Ymir</b> decida actuar, lanzándose contra los titanes y revelando su secreto:<b>  puede transformarse en titán.</b>
             </p>
         </div>
         <div class="bloque">
@@ -120,11 +124,11 @@
             <p>Cuando los reclutas entrenaban en la nieve, Daz resultó herido y fue ayudado por Krista, quien se negaba 
                 a abandonarlo. Ymir discute con ella y revela parte de su pasado. Finalmente decide salvar a Daz 
                 usando su poder de titán pero sin revelarle esto a Krista. Ymir le hace prometer a Krista que le 
-                revelará como salvó a Daz cuando ella le diga su verdadero nombre. De regreso al presente, Ymir 
+                revelará como salvó a Daz cuando ella le diga <b> su verdadero nombre.</b> De regreso al presente, Ymir 
                 lucha en su forma titán a pesar de que está en gran desventaja. Krista la alienta a que derribe la 
                 torre, consejo que sigue no sin antes sacar a los reclutas de la azotea. El derrumbe sin embargo no 
                 logra acabar con los titanes y es atrapada. El Cuerpo de Exploración llega y salva a Ymir a tiempo. 
-                Tal como lo prometió, Krista le revela su verdadero nombre: Historia.
+                Tal como lo prometió, Krista le revela su verdadero nombre: <b> Historia.</b>
             </p>
         </div>
         <div class="bloque">
@@ -136,15 +140,13 @@
                 muralla Rose y se prepara para llevar a Ymir a Trost para que reciba atención médica. 
                 Historia intenta convencer a Hange de que Ymir no es una enemiga de la humanidad, mientras Bertolt 
                 le dice a Reiner de que sería un buen momento para retornar a su "ciudad natal". 
-                Hannes revela que efectivamente, no hay ninguna brecha en la muralla. Sorpresivamente, Reiner le 
-                revela a Eren que él es el Titán Acorazado y Bertolt el Titán Colosal y le pide acompañarlos a su 
-                ciudad natal. Eren recuerda que doce horas antes, el informe de Hange indicaba como principales 
-                sospechosos de ser cómplices de Annie Leonhart a Reiner y Bertolt. Eren desmerece las afirmaciones 
-                de Reiner, mientras este entra en una crisis nerviosa y revela que su brazo herido se ha regenerado. 
-                Mikasa ataca rápidamente a ambos, pero antes de poder asesinar a Bertolt, es empujada por Reiner. 
-                Los dos se transforman ante el impacto de los demás, ya atrapan a Eren e Ymir. Con lágrimas en los ojos, 
-                Eren recuerda los buenos momentos que pasó con Reiner y Bertolt en el pasado, pero consigue la 
-                suficiente determinación como para transformarse y combatir contra el Titán Acorazado.
+                Hannes revela que efectivamente, no hay ninguna brecha en la muralla. Sorpresivamente, <b> Reiner</b> le 
+                revela a Eren que <b> él es el Titán Acorazado y Bertolt el Titán Colosal</b> y le pide acompañarlos a su 
+                ciudad natal.  Eren desmerece las afirmaciones de Reiner, mientras este entra en una crisis nerviosa 
+                y revela que su brazo herido se ha regenerado. Los dos se transforman ante el impacto de los demás, 
+                ya atrapan a Eren e Ymir. Con lágrimas en los ojos, Eren recuerda los buenos momentos que pasó con Reiner 
+                y Bertolt en el pasado, pero consigue la <b> suficiente determinación como para transformarse y combatir</b> 
+                contra el Titán Acorazado.
             </p>
         </div>
         <div class="bloque">
@@ -153,12 +155,12 @@
         <div class="descripcion">
             <p class="titulo">Golpea, arroja, somete</p>
             <p>Luego de que Reiner y Bertolt revelaran sus identidades, Eren se dispone a combatir contra el 
-                Titán Acorazado. Mientras tanto, el Titán Colosal se ha tragado a Ymir y a otro soldado. 
+                Titán Acorazado. Mientras tanto,<b>  el Titán Colosal se ha tragado a Ymir</b> y a otro soldado. 
                 El Cuerpo de Exploración intenta detenerlo, pero el intenso vapor que éste emite les impide acercarse. 
                 Eren está siendo derrotado por Reiner, y Mikasa es incapaz de ayudarlo. Eren recuerda las técnicas que
                 Annie le enseñó durante sus días de entrenamiento, y par sorpresa de todos, consigue someter a Reiner. 
-                Tras un duro enfrentamiento, Eren está a punto de vencer al Titán Acorazado, cuando el Titán Colosal 
-                cae desde la muralla hacia ellos.
+                Tras un duro enfrentamiento, Eren está a punto de vencer al Titán Acorazado,<b>  cuando el Titán Colosal 
+                cae desde la muralla hacia ellos.</b>
             </p>
         </div>
         <div class="bloque">
@@ -167,7 +169,7 @@
         <div class="descripcion">
             <p class="titulo">Los cazadores</p>
             <p>El combate entre Eren y el Titán Acorazado termina abruptamente luego de que el Titán Colosal 
-                cayera sobre ambos. Eren e Ymir son secuestrados por Reiner y Bertolt, y los soldados cercanos quedan 
+                cayera sobre ambos. <b> Eren e Ymir son secuestrados por Reiner y Bertolt,</b> y los soldados cercanos quedan 
                 lastimados tras el impacto. Cinco horas después, Hannes intenta animar a Mikasa y Armin, mientras el 
                 comandante Erwin, ahora al tanto de la situación, prepara una operación de rescate.
             </p>
@@ -178,8 +180,8 @@
         <div class="descripcion">
             <p class="titulo">Apertura</p>
             <p>El Cuerpo de Exploración continúa avanzando hacia el bosque de los árboles gigantes con la misión 
-                de rescatar Eren e Ymir. Tras despertar, Eren escucha cuales serán los siguientes movimientos de 
-                Reiner y Bertolt, mientras Ymir decide en quien confiar. A lo lejos, Erwin y sus tropas se acercan 
+                de rescatar Eren e Ymir. Tras despertar, <b> Eren escucha cuales serán los siguientes movimientos de 
+                Reiner y Bertolt, mientras Ymir decide en quien confiar.</b> A lo lejos, <b> Erwin</b> y sus tropas se acercan 
                 cada vez más a su objetivo.
             </p>
         </div>
@@ -189,7 +191,7 @@
         <div class="descripcion">
             <p class="titulo">Niños</p>
             <p>La Legión ha dado caza a Reiner y compañía, así que tienen que emprender la huida. No obstante, 
-                Ymir está obsesionada con llevarse a Historia con ella y no parará hasta conseguirlo.
+                <b> Ymir está obsesionada con llevarse a Historia</b> con ella y no parará hasta conseguirlo.
             </p>
         </div>
         <div class="bloque">
@@ -198,8 +200,8 @@
         <div class="descripcion">
             <p class="titulo">Asalto</p>
             <p>Mientras Reiner escapa en compañía de Bertolt e Ymir, los miembros del Cuerpo les dan caza para 
-                intentar salvar a Eren y a Historia. Y estarán dispuestos a sacrificarlo todo, pues sin Eren, 
-                la humanidad no tiene futuro.
+                intentar salvar a Eren y a Historia. Y estarán dispuestos a sacrificarlo todo,<b>  pues sin Eren, 
+                la humanidad no tiene futuro.</b>
             </p>
         </div>
         <div class="bloque">
@@ -207,15 +209,19 @@
         </div>
         <div class="descripcion">
             <p class="titulo">Grito</p>
-            <p>Ante Eren se encuentra el titán que devoró a su madre hace cinco años, aquel que provocó su odio 
+            <p>Ante <b> Eren se encuentra el titán que devoró a su madre</b> hace cinco años, aquel que provocó su odio 
                 contra estos y le hizo jurar venganza. Hannes intenta combatir contra el titán y vengar a Carla 
                 por lo ocurrido aquel día en Shiganshina. Cuando la situación parece desfavorable para los soldados, 
-                Eren logra desatar un poder más allá de la imaginación.
+                <b> Eren logra desatar un poder más allá de la imaginación.</b>
             </p>
         </div>
         
       
     </article>
+
+    <a class="irarriba" href="#"><i class="fa fa-arrow-up"></i></a>
+
+
     <footer>
   
        
